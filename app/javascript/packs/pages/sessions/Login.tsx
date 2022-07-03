@@ -5,9 +5,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import styled from "styled-components"
-import Input from '../../atoms/input'
+import Input from '../../atoms/Input'
 import { BrowserRouter, Link, BrowserHistory } from 'react-router-dom';
-import { Redirect } from 'react-router'
 
 const Container = styled.div`
   width: 100%;

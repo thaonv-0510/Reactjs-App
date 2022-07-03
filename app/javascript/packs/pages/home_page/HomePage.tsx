@@ -2,15 +2,15 @@ import React from 'react'
 import ReactDOM from 'react-dom'
 import styled from "styled-components"
 
-export default function HomePage() {
+const HomePage: React.FC = () => {
   return(
-    <div>
-      <p>
-        Hello
-      </p>
-    </div>
+    <>
+      Hello
+    </>
   )
 }
+
+export default HomePage
 
 // document.addEventListener('DOMContentLoaded', () => {
 //   ReactDOM.render(

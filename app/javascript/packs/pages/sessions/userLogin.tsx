@@ -3,9 +3,8 @@
 // of the page.
 
 import React from 'react'
-import ReactDOM from 'react-dom'
 import styled from "styled-components"
-import Input from '../../atoms/input'
+import Input from '../../atoms/Input';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 

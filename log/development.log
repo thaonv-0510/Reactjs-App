@@ -106,3 +106,251 @@ puma (4.3.12) lib/puma/server.rb:332:in `block in run'
 puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
   [1m[35m (0.2ms)[0m  [1m[35mCREATE DATABASE `reactapp_development` DEFAULT CHARACTER SET `utf8`[0m
   [1m[35m (0.3ms)[0m  [1m[35mCREATE DATABASE `reactapp_development` DEFAULT CHARACTER SET `utf8`[0m
+Started GET "/" for ::1 at 2022-07-05 22:17:18 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by HomepageController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering homepage/index.html.erb within layouts/application
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: fe11e703bf71ab611690
+Version: webpack 4.46.0
+Time: 1072ms
+Built at: 07/05/2022 10:17:20 PM
+                                                  Asset      Size                    Chunks                         Chunk Names
+                      js/Routes-338580d96f4121fb93aa.js   4.1 KiB                    Routes  [emitted] [immutable]  Routes
+                  js/Routes-338580d96f4121fb93aa.js.map  3.83 KiB                    Routes  [emitted] [dev]        Routes
+                 js/application-ed259ab53dbeb67d5f8e.js   160 KiB               application  [emitted] [immutable]  application
+             js/application-ed259ab53dbeb67d5f8e.js.map   181 KiB               application  [emitted] [dev]        application
+                 js/atoms/input-59cb45a8f599c3ee475c.js   199 KiB               atoms/input  [emitted] [immutable]  atoms/input
+             js/atoms/input-59cb45a8f599c3ee475c.js.map   219 KiB               atoms/input  [emitted] [dev]        atoms/input
+                          js/en-16033b32b0f79f8f70db.js  4.18 KiB                        en  [emitted] [immutable]  en
+                      js/en-16033b32b0f79f8f70db.js.map  3.51 KiB                        en  [emitted] [dev]        en
+                   js/hello_erb-ba4a88f0a76ac191f480.js  4.22 KiB                 hello_erb  [emitted] [immutable]  hello_erb
+               js/hello_erb-ba4a88f0a76ac191f480.js.map  3.53 KiB                 hello_erb  [emitted] [dev]        hello_erb
+                   js/pages/App-48054accddf74078f3b0.js  1.29 MiB                 pages/App  [emitted] [immutable]  pages/App
+               js/pages/App-48054accddf74078f3b0.js.map  1.45 MiB                 pages/App  [emitted] [dev]        pages/App
+    js/pages/home_page/HomePage-60a73a16d21d2943e0c0.js  1.14 MiB  pages/home_page/HomePage  [emitted] [immutable]  pages/home_page/HomePage
+js/pages/home_page/HomePage-60a73a16d21d2943e0c0.js.map  1.31 MiB  pages/home_page/HomePage  [emitted] [dev]        pages/home_page/HomePage
+        js/pages/sessions/Login-fe6b1dd7b69d0509fdbd.js  1.28 MiB      pages/sessions/Login  [emitted] [immutable]  pages/sessions/Login
+    js/pages/sessions/Login-fe6b1dd7b69d0509fdbd.js.map  1.45 MiB      pages/sessions/Login  [emitted] [dev]        pages/sessions/Login
+    js/pages/sessions/userLogin-00025bd9597736d5c9aa.js  1.28 MiB  pages/sessions/userLogin  [emitted] [immutable]  pages/sessions/userLogin
+js/pages/sessions/userLogin-00025bd9597736d5c9aa.js.map  1.45 MiB  pages/sessions/userLogin  [emitted] [dev]        pages/sessions/userLogin
+                          js/vi-f8e063bdc01bf2f875a7.js  4.18 KiB                        vi  [emitted] [immutable]  vi
+                      js/vi-f8e063bdc01bf2f875a7.js.map  3.51 KiB                        vi  [emitted] [dev]        vi
+                                          manifest.json  3.39 KiB                            [emitted]              
+Entrypoint application = js/application-ed259ab53dbeb67d5f8e.js js/application-ed259ab53dbeb67d5f8e.js.map
+Entrypoint atoms/input = js/atoms/input-59cb45a8f599c3ee475c.js js/atoms/input-59cb45a8f599c3ee475c.js.map
+Entrypoint en = js/en-16033b32b0f79f8f70db.js js/en-16033b32b0f79f8f70db.js.map
+Entrypoint hello_erb = js/hello_erb-ba4a88f0a76ac191f480.js js/hello_erb-ba4a88f0a76ac191f480.js.map
+Entrypoint pages/App = js/pages/App-48054accddf74078f3b0.js js/pages/App-48054accddf74078f3b0.js.map
+Entrypoint pages/home_page/HomePage = js/pages/home_page/HomePage-60a73a16d21d2943e0c0.js js/pages/home_page/HomePage-60a73a16d21d2943e0c0.js.map
+Entrypoint pages/sessions/Login = js/pages/sessions/Login-fe6b1dd7b69d0509fdbd.js js/pages/sessions/Login-fe6b1dd7b69d0509fdbd.js.map
+Entrypoint pages/sessions/userLogin = js/pages/sessions/userLogin-00025bd9597736d5c9aa.js js/pages/sessions/userLogin-00025bd9597736d5c9aa.js.map
+Entrypoint Routes = js/Routes-338580d96f4121fb93aa.js js/Routes-338580d96f4121fb93aa.js.map
+Entrypoint vi = js/vi-f8e063bdc01bf2f875a7.js js/vi-f8e063bdc01bf2f875a7.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Routes.jsx] 234 bytes {Routes} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./app/javascript/packs/atoms/input.jsx] 2.82 KiB {atoms/input} {pages/App} {pages/sessions/Login} {pages/sessions/userLogin} [built]
+[./app/javascript/packs/en.js.erb] 325 bytes {en} [built] [failed] [1 error]
+[./app/javascript/packs/hello_erb.js.erb] 325 bytes {hello_erb} [built] [failed] [1 error]
+[./app/javascript/packs/pages/App.jsx] 2.44 KiB {pages/App} [built]
+[./app/javascript/packs/pages/home_page/HomePage.jsx] 742 bytes {pages/home_page/HomePage} {pages/App} [built]
+[./app/javascript/packs/pages/sessions/Login.jsx] 12.8 KiB {pages/sessions/Login} [built]
+[./app/javascript/packs/pages/sessions/userLogin.jsx] 10.2 KiB {pages/sessions/userLogin} {pages/App} [built]
+[./app/javascript/packs/vi.js.erb] 325 bytes {vi} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 33 hidden modules
+
+ERROR in ./app/javascript/packs/pages/sessions/Login.jsx 297:13-27
+"export 'BrowserHistory' was not found in 'react-router-dom'
+
+ERROR in ./app/javascript/packs/en.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:267:19)
+    at onErrorNT (internal/child_process.js:467:16)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+ERROR in ./app/javascript/packs/hello_erb.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:267:19)
+    at onErrorNT (internal/child_process.js:467:16)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+ERROR in ./app/javascript/packs/vi.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (internal/child_process.js:267:19)
+    at onErrorNT (internal/child_process.js:467:16)
+    at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+rails-erb-loader encountered an unexpected error while writing to stdin: "write EPIPE". Please report this to the maintainers.
+rails-erb-loader encountered an unexpected error while writing to stdin: "write EPIPE". Please report this to the maintainers.
+rails-erb-loader encountered an unexpected error while writing to stdin: "write EPIPE". Please report this to the maintainers.
+
+  Rendered homepage/index.html.erb within layouts/application (Duration: 1848.8ms | Allocations: 3481)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 1869ms (Views: 1855.7ms | ActiveRecord: 0.6ms | Allocations: 20773)
+
+
+Started GET "/" for ::1 at 2022-07-05 22:18:02 +0700
+Processing by HomepageController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering homepage/index.html.erb within layouts/application
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered homepage/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1899)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 22.1ms | ActiveRecord: 0.3ms | Allocations: 8680)
+
+
+Started GET "/" for ::1 at 2022-07-05 22:28:22 +0700
+  
+Mysql2::Error::ConnectionError (Access denied for user 'thao'@'localhost' (using password: NO)):
+  
+mysql2 (0.5.4) lib/mysql2/client.rb:95:in `connect'
+mysql2 (0.5.4) lib/mysql2/client.rb:95:in `initialize'
+activerecord (6.0.5) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new'
+activerecord (6.0.5) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `mysql2_connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:1125:in `retrieve_connection'
+activerecord (6.0.5) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.5) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.5) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.5) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.5) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2022-07-05 22:30:58 +0700
+  
+ActiveRecord::NoDatabaseError (Unknown database 'reactapp_development'):
+  
+activerecord (6.0.5) lib/active_record/connection_adapters/mysql2_adapter.rb:28:in `rescue in mysql2_connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/mysql2_adapter.rb:14:in `mysql2_connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:887:in `new_connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:931:in `checkout_new_connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:910:in `try_to_checkout_new_connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:871:in `acquire_connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:593:in `checkout'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:437:in `connection'
+activerecord (6.0.5) lib/active_record/connection_adapters/abstract/connection_pool.rb:1125:in `retrieve_connection'
+activerecord (6.0.5) lib/active_record/connection_handling.rb:221:in `retrieve_connection'
+activerecord (6.0.5) lib/active_record/connection_handling.rb:189:in `connection'
+activerecord (6.0.5) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.5) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.5) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.5) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.5) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.5) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.5) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.5) lib/action_dispatch/middleware/host_authorization.rb:103:in `call'
+webpacker (4.3.0) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.7.0) lib/rack/proxy.rb:63:in `call'
+railties (6.0.5) lib/rails/engine.rb:527:in `call'
+puma (4.3.12) lib/puma/configuration.rb:228:in `call'
+puma (4.3.12) lib/puma/server.rb:727:in `handle_request'
+puma (4.3.12) lib/puma/server.rb:476:in `process_client'
+puma (4.3.12) lib/puma/server.rb:332:in `block in run'
+puma (4.3.12) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE DATABASE `reactapp_development` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE DATABASE `reactapp_test` DEFAULT CHARACTER SET `utf8`[0m
+  [1m[35m (15.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (16.0ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('1741700487330441855', 0)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to DeviseCreateUsers (20211231131557)
+  [1m[35m (13.9ms)[0m  [1m[35mCREATE TABLE `users` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (10.9ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_email`  ON `users` (`email`) [0m
+  [1m[35m (11.9ms)[0m  [1m[35mCREATE UNIQUE INDEX `index_users_on_reset_password_token`  ON `users` (`reset_password_token`) [0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.0ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20211231131557')[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'development', '2022-07-05 15:31:20.956635', '2022-07-05 15:31:20.956635')[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT RELEASE_LOCK('1741700487330441855')[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2022-07-05 22:31:24 +0700
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by HomepageController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Completed 401 Unauthorized in 10ms (ActiveRecord: 1.1ms | Allocations: 4649)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-07-05 22:31:24 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 88)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 13820)
+
+

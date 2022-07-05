@@ -83,6 +83,10 @@ GEM
       responders
       warden (~> 1.2.3)
     diff-lcs (1.5.0)
+    dotenv (2.7.6)
+    dotenv-rails (2.7.6)
+      dotenv (= 2.7.6)
+      railties (>= 3.2)
     erubi (1.10.0)
     ffi (1.15.4)
     globalid (1.0.0)
@@ -108,6 +112,7 @@ GEM
     mini_portile2 (2.8.0)
     minitest (5.16.1)
     msgpack (1.4.2)
+    mysql2 (0.5.4)
     nio4r (2.5.8)
     nokogiri (1.13.6)
       mini_portile2 (~> 2.8.0)
@@ -200,7 +205,6 @@ GEM
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     thor (1.2.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -239,9 +243,11 @@ DEPENDENCIES
   byebug
   capybara (>= 2.15)
   devise
+  dotenv-rails
   i18n-js
   jbuilder (~> 2.7)
   listen (~> 3.2)
+  mysql2 (~> 0.5)
   puma (~> 4.3)
   rails (~> 6.0.4, >= 6.0.4.1)
   rspec-rails (~> 5.1)
@@ -249,7 +255,6 @@ DEPENDENCIES
   selenium-webdriver
   spring
   spring-watcher-listen (~> 2.0.0)
-  sqlite3 (~> 1.4)
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 3.3.0)

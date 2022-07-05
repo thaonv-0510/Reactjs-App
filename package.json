@@ -7,8 +7,6 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.3.0",
-    "atomic-layout": "^0.16.2",
-    "atoms": "^0.2.0",
     "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
     "i18n-js": "^3.8.0",
     "prop-types": "^15.7.2",
@@ -18,7 +16,6 @@
     "react-redux": "^7.2.6",
     "react-router-dom": "^6.2.1",
     "redux": "^4.1.2",
-    "storybook": "^6.4.8",
     "styled-components": "^5.3.3",
     "turbolinks": "^5.2.0"
   },

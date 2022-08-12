@@ -7,17 +7,18 @@ jobs:
     working_directory: ~/Reactjs-App
     docker:
       - image: circleci/ruby:2.7.1
+        environment:
+          RAILS_ENV: test
+          DB_HOST: 127.0.0.1
+          DB_USERNAME: root
+          DB_PASSWORD: "123456"
       - image: mysql:5.7
         environment:
-          MYSQL_ROOT_PASSWORD: "12345678"
-    environment:
-      RAILS_ENV: test
+          MYSQL_ROOT_HOST: "%"
+          MYSQL_ROOT_PASSWORD: "123456"
     steps:
       - checkout
       - ruby/install-deps
-      - run:
-          name: Wait for DB
-          command: dockerize -wait tcp://127.0.0.1:3306 -timeout 1m
       - run:
           name: set up db
           command: bundle exec rails db:create db:migrate

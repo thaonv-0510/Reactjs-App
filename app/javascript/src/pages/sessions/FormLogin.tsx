@@ -2,10 +2,9 @@
 // like app/views/layouts/application.html.erb. All it does is render <div>Hello React</div> at the bottom
 // of the page.
 
-import React from 'react'
-import ReactDOM from 'react-dom'
-import styled from "styled-components"
-import Input from '../../atoms/input'
+import React from 'react';
+import styled from "styled-components";
+import Input from '@src/atoms/Input';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -75,7 +74,7 @@ const ButtonFaceBookLogin = styled.button`
     box-shadow: 0 1px 20px rgb(0 0 0 / 20%);
   }
 `
-export default function FormLogin() {
+const FormLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [msg, setMsg] = useState('');
@@ -106,7 +105,6 @@ export default function FormLogin() {
         setError(status !== 200);
         setMsg(msg);
         if(status == 200) navigate("/");
-        console.log(email, password, msg, hasError)
       })
   }
 
@@ -121,14 +119,14 @@ export default function FormLogin() {
           <Input
             type="text"
             hasError={hasError}
-            onChange={(e) => setEmail(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
             placeholder="example@gmail.com">
           </Input>
           <label htmlFor="password">Password</label>
           <Input
             type="password"
             hasError={hasError}
-            onChange={(e) => setPassword(e.target.value)}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
             placeholder="Password">
           </Input>
           <div className='form-action'>
@@ -155,9 +153,4 @@ export default function FormLogin() {
   )
 }
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   ReactDOM.render(
-//     <FormLogin/>,
-//     document.getElementById('root'),
-//   )
-// })
+export default FormLogin

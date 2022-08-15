@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from "styled-components"
-import PropTypes from 'prop-types';
 
 const BorderInput = styled.div`
   border: ${props => props.hasError ? '1px solid #df0808' : '1px solid rgb(23 57 165 / 20%)'};
@@ -32,11 +31,16 @@ const TextError = styled.p`
   font-size: 12px;
 `
 
-export default function Input({
+interface Props {
+  hasError: boolean;
+  errorMessage?: string;
+}
+
+const Input: React.FC<Props & React.HTMLProps<HTMLInputElement>> = ({
   hasError,
   errorMessage,
   ...props
-}) {
+}) => {
   return(
     <BorderInput key="border-input" hasError={hasError}>
       <input
@@ -53,3 +57,5 @@ export default function Input({
 Input.defaultProps = {
   hasError: false
 }
+
+export default Input;

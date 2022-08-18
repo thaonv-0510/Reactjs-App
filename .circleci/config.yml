@@ -4,7 +4,7 @@ orbs:
 
 ruby_image: &ruby_image circleci/ruby:2.7.1
 
-excuters:
+executors:
   ruby:
     docker:
       - image: *ruby_image
@@ -25,7 +25,8 @@ excuters:
       - image: node:14.20.0
 jobs:
   build:
-    excuter: rails
+    executor:
+      name: rails
     working_directory: ~/Reactjs-App
     steps:
       - checkout
@@ -34,7 +35,8 @@ jobs:
           name: set up db
           command: bundle exec rails db:create db:migrate
   run_backend_test:
-    excuter: rails
+    executor: 
+      name: rails
     steps:
       - run:
           name: run rspec

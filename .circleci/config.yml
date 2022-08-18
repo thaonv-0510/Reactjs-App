@@ -2,11 +2,15 @@ version: 2.1
 orbs:
   ruby: circleci/ruby@1.1.2
 
-jobs:
-  build:
-    working_directory: ~/Reactjs-App
+ruby_image: &ruby_image circleci/ruby:2.7.1
+
+excuters:
+  ruby:
     docker:
-      - image: circleci/ruby:2.7.1
+      - image: *ruby_image
+  rails:
+    docker:
+      - image: *ruby_image
         environment:
           RAILS_ENV: test
           DB_HOST: 127.0.0.1
@@ -16,12 +20,22 @@ jobs:
         environment:
           MYSQL_ROOT_HOST: "%"
           MYSQL_ROOT_PASSWORD: "123456"
+  node:
+    docker:
+      - image: node:14.20.0
+jobs:
+  build:
+    excuter: rails
+    working_directory: ~/Reactjs-App
     steps:
       - checkout
       - ruby/install-deps
       - run:
           name: set up db
           command: bundle exec rails db:create db:migrate
+  run_backend_test:
+    excuter: rails
+    steps:
       - run:
           name: run rspec
           command: bundle exec rspec

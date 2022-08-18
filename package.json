@@ -1,6 +1,9 @@
 {
   "name": "reactjs_app",
   "private": true,
+  "engines": {
+    "node": "^14"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.16.0",
     "@babel/preset-typescript": "^7.18.6",

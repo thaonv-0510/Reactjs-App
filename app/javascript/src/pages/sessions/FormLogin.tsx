@@ -2,10 +2,9 @@
 // like app/views/layouts/application.html.erb. All it does is render <div>Hello React</div> at the bottom
 // of the page.
 
-import React from 'react'
-import ReactDOM from 'react-dom'
-import styled from "styled-components"
-import Input from '../../atoms/input'
+import React from 'react';
+import styled from "styled-components";
+import Input from '@src/atoms/Input';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -17,7 +16,6 @@ const Container = styled.div`
   color: #091F6C;
   min-height: 100vh;
   -webkit-align-items: center;
-  justify-content: center;
 
   #login-form {
     padding: 3rem;
@@ -44,7 +42,7 @@ const Container = styled.div`
   }
 `
 const ButtonLogin = styled.button`
-  height: 50px;
+  height: 70px;
   background: #1EC18D;
   border: none;
   border-radius: 10px;
@@ -55,7 +53,6 @@ const ButtonLogin = styled.button`
 
   :hover {
     cursor: pointer;
-    background: #1EC18D;
     box-shadow: 0 1px 20px rgb(0 0 0 / 20%);
   }
 `
@@ -64,7 +61,7 @@ const ButtonFaceBookLogin = styled.button`
   height: 40px;
   background: rgb(23 119 242);
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   color: #fff;
   width: 100%;
   margin-bottom: 10px;
@@ -72,10 +69,11 @@ const ButtonFaceBookLogin = styled.button`
 
   :hover {
     cursor: pointer;
+    background: rgb(42 89 149);
     box-shadow: 0 1px 20px rgb(0 0 0 / 20%);
   }
 `
-export default function FormLogin() {
+const FormLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [msg, setMsg] = useState('');
@@ -106,7 +104,6 @@ export default function FormLogin() {
         setError(status !== 200);
         setMsg(msg);
         if(status == 200) navigate("/");
-        console.log(email, password, msg, hasError)
       })
   }
 
@@ -116,28 +113,32 @@ export default function FormLogin() {
         <h2>
           Login to App
         </h2>
-        <label htmlFor="email">Email Address</label>
-        <Input
-          type="text"
-          hasError={hasError}
-          onChange={(e) => setEmail(e.target.value)}
-          placeholder="example@gmail.com">
-        </Input>
-        <label htmlFor="password">Password</label>
-        <Input
-          type="password"
-          hasError={hasError}
-          onChange={(e) => setPassword(e.target.value)}
-          placeholder="Password">
-        </Input>
-        <div className='form-action'>
-          <ButtonLogin onClick={handleLogin}>
-            Login
-          </ButtonLogin>
-        </div>
-        <ButtonFaceBookLogin onClick={() => undefined}>
-          Login by FaceBook
-        </ButtonFaceBookLogin>
+        <form onSubmit={handleLogin}>
+          <label htmlFor="email">Email address</label>
+          <Input
+            type="text"
+            hasError={hasError}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
+            placeholder="example@gmail.com">
+          </Input>
+          <label htmlFor="password">Password</label>
+          <Input
+            type="password"
+            hasError={hasError}
+            onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
+            placeholder="Password">
+          </Input>
+          <div className='form-action'>
+            <ButtonLogin>
+              Login
+            </ButtonLogin>
+          </div>
+        </form>
+        <form>
+          <ButtonFaceBookLogin>
+            Login by FaceBook
+          </ButtonFaceBookLogin>
+        </form>
         <div>
           <div>
             <Link to="/">Sign Up</Link>
@@ -151,9 +152,4 @@ export default function FormLogin() {
   )
 }
 
-// document.addEventListener('DOMContentLoaded', () => {
-//   ReactDOM.render(
-//     <FormLogin/>,
-//     document.getElementById('root'),
-//   )
-// })
+export default FormLogin

@@ -354,3 +354,774 @@ Processing by SessionsController#new as HTML
 Completed 200 OK in 15ms (Views: 9.5ms | ActiveRecord: 0.0ms | Allocations: 13820)
 
 
+Started GET "/users/sign_in" for ::1 at 2023-02-15 11:58:38 +0700
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 197)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: cdedb90b73c37a798b11
+Version: webpack 4.46.0
+Time: 2541ms
+Built at: 02/15/2023 11:58:43 AM
+                                                  Asset      Size                    Chunks                         Chunk Names
+                      js/Routes-338580d96f4121fb93aa.js   4.1 KiB                    Routes  [emitted] [immutable]  Routes
+                  js/Routes-338580d96f4121fb93aa.js.map  3.83 KiB                    Routes  [emitted] [dev]        Routes
+                 js/application-ed259ab53dbeb67d5f8e.js   160 KiB               application  [emitted] [immutable]  application
+             js/application-ed259ab53dbeb67d5f8e.js.map   181 KiB               application  [emitted] [dev]        application
+                 js/atoms/input-b68bc27cd98e72f2d2bd.js   199 KiB               atoms/input  [emitted] [immutable]  atoms/input
+             js/atoms/input-b68bc27cd98e72f2d2bd.js.map   219 KiB               atoms/input  [emitted] [dev]        atoms/input
+                          js/en-dd8bfd3261ea1da250e1.js  4.19 KiB                        en  [emitted] [immutable]  en
+                      js/en-dd8bfd3261ea1da250e1.js.map  3.51 KiB                        en  [emitted] [dev]        en
+                   js/hello_erb-29795fdceeedbd36f1b6.js  4.23 KiB                 hello_erb  [emitted] [immutable]  hello_erb
+               js/hello_erb-29795fdceeedbd36f1b6.js.map  3.53 KiB                 hello_erb  [emitted] [dev]        hello_erb
+                   js/pages/App-76fe75451913ff24b9fd.js  1.29 MiB                 pages/App  [emitted] [immutable]  pages/App
+               js/pages/App-76fe75451913ff24b9fd.js.map  1.45 MiB                 pages/App  [emitted] [dev]        pages/App
+    js/pages/home_page/HomePage-ae647a706aac9510833c.js  1.14 MiB  pages/home_page/HomePage  [emitted] [immutable]  pages/home_page/HomePage
+js/pages/home_page/HomePage-ae647a706aac9510833c.js.map  1.31 MiB  pages/home_page/HomePage  [emitted] [dev]        pages/home_page/HomePage
+        js/pages/sessions/Login-f35d99e61b1545c77109.js  1.28 MiB      pages/sessions/Login  [emitted] [immutable]  pages/sessions/Login
+    js/pages/sessions/Login-f35d99e61b1545c77109.js.map  1.45 MiB      pages/sessions/Login  [emitted] [dev]        pages/sessions/Login
+    js/pages/sessions/userLogin-9fb9e20926077dbae99b.js  1.28 MiB  pages/sessions/userLogin  [emitted] [immutable]  pages/sessions/userLogin
+js/pages/sessions/userLogin-9fb9e20926077dbae99b.js.map  1.45 MiB  pages/sessions/userLogin  [emitted] [dev]        pages/sessions/userLogin
+                          js/vi-d296e697a51dba30698f.js  4.19 KiB                        vi  [emitted] [immutable]  vi
+                      js/vi-d296e697a51dba30698f.js.map  3.51 KiB                        vi  [emitted] [dev]        vi
+                                          manifest.json  3.39 KiB                            [emitted]              
+Entrypoint application = js/application-ed259ab53dbeb67d5f8e.js js/application-ed259ab53dbeb67d5f8e.js.map
+Entrypoint atoms/input = js/atoms/input-b68bc27cd98e72f2d2bd.js js/atoms/input-b68bc27cd98e72f2d2bd.js.map
+Entrypoint en = js/en-dd8bfd3261ea1da250e1.js js/en-dd8bfd3261ea1da250e1.js.map
+Entrypoint hello_erb = js/hello_erb-29795fdceeedbd36f1b6.js js/hello_erb-29795fdceeedbd36f1b6.js.map
+Entrypoint pages/App = js/pages/App-76fe75451913ff24b9fd.js js/pages/App-76fe75451913ff24b9fd.js.map
+Entrypoint pages/home_page/HomePage = js/pages/home_page/HomePage-ae647a706aac9510833c.js js/pages/home_page/HomePage-ae647a706aac9510833c.js.map
+Entrypoint pages/sessions/Login = js/pages/sessions/Login-f35d99e61b1545c77109.js js/pages/sessions/Login-f35d99e61b1545c77109.js.map
+Entrypoint pages/sessions/userLogin = js/pages/sessions/userLogin-9fb9e20926077dbae99b.js js/pages/sessions/userLogin-9fb9e20926077dbae99b.js.map
+Entrypoint Routes = js/Routes-338580d96f4121fb93aa.js js/Routes-338580d96f4121fb93aa.js.map
+Entrypoint vi = js/vi-d296e697a51dba30698f.js js/vi-d296e697a51dba30698f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Routes.jsx] 234 bytes {Routes} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./app/javascript/packs/atoms/input.jsx] 2.83 KiB {atoms/input} {pages/App} {pages/sessions/Login} {pages/sessions/userLogin} [built]
+[./app/javascript/packs/en.js.erb] 331 bytes {en} [built] [failed] [1 error]
+[./app/javascript/packs/hello_erb.js.erb] 331 bytes {hello_erb} [built] [failed] [1 error]
+[./app/javascript/packs/pages/App.jsx] 2.45 KiB {pages/App} [built]
+[./app/javascript/packs/pages/home_page/HomePage.jsx] 753 bytes {pages/home_page/HomePage} {pages/App} [built]
+[./app/javascript/packs/pages/sessions/Login.jsx] 12.8 KiB {pages/sessions/Login} [built]
+[./app/javascript/packs/pages/sessions/userLogin.jsx] 10.2 KiB {pages/sessions/userLogin} {pages/App} [built]
+[./app/javascript/packs/vi.js.erb] 331 bytes {vi} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 33 hidden modules
+
+ERROR in ./app/javascript/packs/pages/sessions/Login.jsx 297:13-27
+"export 'BrowserHistory' was not found in 'react-router-dom'
+
+ERROR in ./app/javascript/packs/en.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/hello_erb.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/vi.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 5048ms (Views: 5012.5ms | ActiveRecord: 5.3ms | Allocations: 17403)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 11:59:41 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.7ms | ActiveRecord: 0.0ms | Allocations: 5676)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 11:59:48 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.3ms | ActiveRecord: 0.0ms | Allocations: 5665)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 12:00:56 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 5)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 9ed449b8c68dd2143ebc
+Version: webpack 4.46.0
+Time: 1853ms
+Built at: 02/15/2023 12:00:59 PM
+                                                  Asset      Size                    Chunks                         Chunk Names
+                      js/Routes-338580d96f4121fb93aa.js   4.1 KiB                    Routes  [emitted] [immutable]  Routes
+                  js/Routes-338580d96f4121fb93aa.js.map  3.83 KiB                    Routes  [emitted] [dev]        Routes
+                 js/application-ed259ab53dbeb67d5f8e.js   160 KiB               application  [emitted] [immutable]  application
+             js/application-ed259ab53dbeb67d5f8e.js.map   181 KiB               application  [emitted] [dev]        application
+                 js/atoms/input-b68bc27cd98e72f2d2bd.js   199 KiB               atoms/input  [emitted] [immutable]  atoms/input
+             js/atoms/input-b68bc27cd98e72f2d2bd.js.map   219 KiB               atoms/input  [emitted] [dev]        atoms/input
+                          js/en-dd8bfd3261ea1da250e1.js  4.19 KiB                        en  [emitted] [immutable]  en
+                      js/en-dd8bfd3261ea1da250e1.js.map  3.51 KiB                        en  [emitted] [dev]        en
+                   js/hello_erb-29795fdceeedbd36f1b6.js  4.23 KiB                 hello_erb  [emitted] [immutable]  hello_erb
+               js/hello_erb-29795fdceeedbd36f1b6.js.map  3.53 KiB                 hello_erb  [emitted] [dev]        hello_erb
+                   js/pages/App-ea8269c6bf168b546730.js  1.29 MiB                 pages/App  [emitted] [immutable]  pages/App
+               js/pages/App-ea8269c6bf168b546730.js.map  1.45 MiB                 pages/App  [emitted] [dev]        pages/App
+    js/pages/home_page/HomePage-ae647a706aac9510833c.js  1.14 MiB  pages/home_page/HomePage  [emitted] [immutable]  pages/home_page/HomePage
+js/pages/home_page/HomePage-ae647a706aac9510833c.js.map  1.31 MiB  pages/home_page/HomePage  [emitted] [dev]        pages/home_page/HomePage
+        js/pages/sessions/Login-f35d99e61b1545c77109.js  1.28 MiB      pages/sessions/Login  [emitted] [immutable]  pages/sessions/Login
+    js/pages/sessions/Login-f35d99e61b1545c77109.js.map  1.45 MiB      pages/sessions/Login  [emitted] [dev]        pages/sessions/Login
+    js/pages/sessions/userLogin-579adfddf6fb7280c59d.js  1.28 MiB  pages/sessions/userLogin  [emitted] [immutable]  pages/sessions/userLogin
+js/pages/sessions/userLogin-579adfddf6fb7280c59d.js.map  1.45 MiB  pages/sessions/userLogin  [emitted] [dev]        pages/sessions/userLogin
+                          js/vi-d296e697a51dba30698f.js  4.19 KiB                        vi  [emitted] [immutable]  vi
+                      js/vi-d296e697a51dba30698f.js.map  3.51 KiB                        vi  [emitted] [dev]        vi
+                                          manifest.json  3.39 KiB                            [emitted]              
+Entrypoint application = js/application-ed259ab53dbeb67d5f8e.js js/application-ed259ab53dbeb67d5f8e.js.map
+Entrypoint atoms/input = js/atoms/input-b68bc27cd98e72f2d2bd.js js/atoms/input-b68bc27cd98e72f2d2bd.js.map
+Entrypoint en = js/en-dd8bfd3261ea1da250e1.js js/en-dd8bfd3261ea1da250e1.js.map
+Entrypoint hello_erb = js/hello_erb-29795fdceeedbd36f1b6.js js/hello_erb-29795fdceeedbd36f1b6.js.map
+Entrypoint pages/App = js/pages/App-ea8269c6bf168b546730.js js/pages/App-ea8269c6bf168b546730.js.map
+Entrypoint pages/home_page/HomePage = js/pages/home_page/HomePage-ae647a706aac9510833c.js js/pages/home_page/HomePage-ae647a706aac9510833c.js.map
+Entrypoint pages/sessions/Login = js/pages/sessions/Login-f35d99e61b1545c77109.js js/pages/sessions/Login-f35d99e61b1545c77109.js.map
+Entrypoint pages/sessions/userLogin = js/pages/sessions/userLogin-579adfddf6fb7280c59d.js js/pages/sessions/userLogin-579adfddf6fb7280c59d.js.map
+Entrypoint Routes = js/Routes-338580d96f4121fb93aa.js js/Routes-338580d96f4121fb93aa.js.map
+Entrypoint vi = js/vi-d296e697a51dba30698f.js js/vi-d296e697a51dba30698f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Routes.jsx] 234 bytes {Routes} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./app/javascript/packs/atoms/input.jsx] 2.83 KiB {atoms/input} {pages/App} {pages/sessions/Login} {pages/sessions/userLogin} [built]
+[./app/javascript/packs/en.js.erb] 331 bytes {en} [built] [failed] [1 error]
+[./app/javascript/packs/hello_erb.js.erb] 331 bytes {hello_erb} [built] [failed] [1 error]
+[./app/javascript/packs/pages/App.jsx] 2.45 KiB {pages/App} [built]
+[./app/javascript/packs/pages/home_page/HomePage.jsx] 753 bytes {pages/home_page/HomePage} {pages/App} [built]
+[./app/javascript/packs/pages/sessions/Login.jsx] 12.8 KiB {pages/sessions/Login} [built]
+[./app/javascript/packs/pages/sessions/userLogin.jsx] 10.2 KiB {pages/sessions/userLogin} {pages/App} [built]
+[./app/javascript/packs/vi.js.erb] 331 bytes {vi} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 33 hidden modules
+
+ERROR in ./app/javascript/packs/pages/sessions/Login.jsx 297:13-27
+"export 'BrowserHistory' was not found in 'react-router-dom'
+
+ERROR in ./app/javascript/packs/en.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/vi.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/hello_erb.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 3322ms (Views: 3321.4ms | ActiveRecord: 0.0ms | Allocations: 6980)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 12:01:20 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: d1e6364575228941f9bb
+Version: webpack 4.46.0
+Time: 1696ms
+Built at: 02/15/2023 12:01:23 PM
+                                                  Asset      Size                    Chunks                         Chunk Names
+                      js/Routes-338580d96f4121fb93aa.js   4.1 KiB                    Routes  [emitted] [immutable]  Routes
+                  js/Routes-338580d96f4121fb93aa.js.map  3.83 KiB                    Routes  [emitted] [dev]        Routes
+                 js/application-ed259ab53dbeb67d5f8e.js   160 KiB               application  [emitted] [immutable]  application
+             js/application-ed259ab53dbeb67d5f8e.js.map   181 KiB               application  [emitted] [dev]        application
+                 js/atoms/input-b68bc27cd98e72f2d2bd.js   199 KiB               atoms/input  [emitted] [immutable]  atoms/input
+             js/atoms/input-b68bc27cd98e72f2d2bd.js.map   219 KiB               atoms/input  [emitted] [dev]        atoms/input
+                          js/en-dd8bfd3261ea1da250e1.js  4.19 KiB                        en  [emitted] [immutable]  en
+                      js/en-dd8bfd3261ea1da250e1.js.map  3.51 KiB                        en  [emitted] [dev]        en
+                   js/hello_erb-29795fdceeedbd36f1b6.js  4.23 KiB                 hello_erb  [emitted] [immutable]  hello_erb
+               js/hello_erb-29795fdceeedbd36f1b6.js.map  3.53 KiB                 hello_erb  [emitted] [dev]        hello_erb
+                   js/pages/App-768a83ee53cf3ca02cc9.js  1.29 MiB                 pages/App  [emitted] [immutable]  pages/App
+               js/pages/App-768a83ee53cf3ca02cc9.js.map  1.45 MiB                 pages/App  [emitted] [dev]        pages/App
+    js/pages/home_page/HomePage-ae647a706aac9510833c.js  1.14 MiB  pages/home_page/HomePage  [emitted] [immutable]  pages/home_page/HomePage
+js/pages/home_page/HomePage-ae647a706aac9510833c.js.map  1.31 MiB  pages/home_page/HomePage  [emitted] [dev]        pages/home_page/HomePage
+        js/pages/sessions/Login-f35d99e61b1545c77109.js  1.28 MiB      pages/sessions/Login  [emitted] [immutable]  pages/sessions/Login
+    js/pages/sessions/Login-f35d99e61b1545c77109.js.map  1.45 MiB      pages/sessions/Login  [emitted] [dev]        pages/sessions/Login
+    js/pages/sessions/userLogin-172c5c2d0622055b396d.js  1.28 MiB  pages/sessions/userLogin  [emitted] [immutable]  pages/sessions/userLogin
+js/pages/sessions/userLogin-172c5c2d0622055b396d.js.map  1.45 MiB  pages/sessions/userLogin  [emitted] [dev]        pages/sessions/userLogin
+                          js/vi-d296e697a51dba30698f.js  4.19 KiB                        vi  [emitted] [immutable]  vi
+                      js/vi-d296e697a51dba30698f.js.map  3.51 KiB                        vi  [emitted] [dev]        vi
+                                          manifest.json  3.39 KiB                            [emitted]              
+Entrypoint application = js/application-ed259ab53dbeb67d5f8e.js js/application-ed259ab53dbeb67d5f8e.js.map
+Entrypoint atoms/input = js/atoms/input-b68bc27cd98e72f2d2bd.js js/atoms/input-b68bc27cd98e72f2d2bd.js.map
+Entrypoint en = js/en-dd8bfd3261ea1da250e1.js js/en-dd8bfd3261ea1da250e1.js.map
+Entrypoint hello_erb = js/hello_erb-29795fdceeedbd36f1b6.js js/hello_erb-29795fdceeedbd36f1b6.js.map
+Entrypoint pages/App = js/pages/App-768a83ee53cf3ca02cc9.js js/pages/App-768a83ee53cf3ca02cc9.js.map
+Entrypoint pages/home_page/HomePage = js/pages/home_page/HomePage-ae647a706aac9510833c.js js/pages/home_page/HomePage-ae647a706aac9510833c.js.map
+Entrypoint pages/sessions/Login = js/pages/sessions/Login-f35d99e61b1545c77109.js js/pages/sessions/Login-f35d99e61b1545c77109.js.map
+Entrypoint pages/sessions/userLogin = js/pages/sessions/userLogin-172c5c2d0622055b396d.js js/pages/sessions/userLogin-172c5c2d0622055b396d.js.map
+Entrypoint Routes = js/Routes-338580d96f4121fb93aa.js js/Routes-338580d96f4121fb93aa.js.map
+Entrypoint vi = js/vi-d296e697a51dba30698f.js js/vi-d296e697a51dba30698f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Routes.jsx] 234 bytes {Routes} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./app/javascript/packs/atoms/input.jsx] 2.83 KiB {atoms/input} {pages/App} {pages/sessions/Login} {pages/sessions/userLogin} [built]
+[./app/javascript/packs/en.js.erb] 331 bytes {en} [built] [failed] [1 error]
+[./app/javascript/packs/hello_erb.js.erb] 331 bytes {hello_erb} [built] [failed] [1 error]
+[./app/javascript/packs/pages/App.jsx] 2.45 KiB {pages/App} [built]
+[./app/javascript/packs/pages/home_page/HomePage.jsx] 753 bytes {pages/home_page/HomePage} {pages/App} [built]
+[./app/javascript/packs/pages/sessions/Login.jsx] 12.8 KiB {pages/sessions/Login} [built]
+[./app/javascript/packs/pages/sessions/userLogin.jsx] 10.2 KiB {pages/sessions/userLogin} {pages/App} [built]
+[./app/javascript/packs/vi.js.erb] 331 bytes {vi} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 33 hidden modules
+
+ERROR in ./app/javascript/packs/pages/sessions/Login.jsx 297:13-27
+"export 'BrowserHistory' was not found in 'react-router-dom'
+
+ERROR in ./app/javascript/packs/en.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/hello_erb.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/vi.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2860ms (Views: 2859.2ms | ActiveRecord: 0.0ms | Allocations: 6970)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 12:01:45 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 0fc2045085fb90b1f6fb
+Version: webpack 4.46.0
+Time: 1660ms
+Built at: 02/15/2023 12:01:47 PM
+                                                  Asset      Size                    Chunks                         Chunk Names
+                      js/Routes-338580d96f4121fb93aa.js   4.1 KiB                    Routes  [emitted] [immutable]  Routes
+                  js/Routes-338580d96f4121fb93aa.js.map  3.83 KiB                    Routes  [emitted] [dev]        Routes
+                 js/application-ed259ab53dbeb67d5f8e.js   160 KiB               application  [emitted] [immutable]  application
+             js/application-ed259ab53dbeb67d5f8e.js.map   181 KiB               application  [emitted] [dev]        application
+                 js/atoms/input-b68bc27cd98e72f2d2bd.js   199 KiB               atoms/input  [emitted] [immutable]  atoms/input
+             js/atoms/input-b68bc27cd98e72f2d2bd.js.map   219 KiB               atoms/input  [emitted] [dev]        atoms/input
+                          js/en-dd8bfd3261ea1da250e1.js  4.19 KiB                        en  [emitted] [immutable]  en
+                      js/en-dd8bfd3261ea1da250e1.js.map  3.51 KiB                        en  [emitted] [dev]        en
+                   js/hello_erb-29795fdceeedbd36f1b6.js  4.23 KiB                 hello_erb  [emitted] [immutable]  hello_erb
+               js/hello_erb-29795fdceeedbd36f1b6.js.map  3.53 KiB                 hello_erb  [emitted] [dev]        hello_erb
+                   js/pages/App-bf30d98dfc1afd6092da.js  1.29 MiB                 pages/App  [emitted] [immutable]  pages/App
+               js/pages/App-bf30d98dfc1afd6092da.js.map  1.45 MiB                 pages/App  [emitted] [dev]        pages/App
+    js/pages/home_page/HomePage-ae647a706aac9510833c.js  1.14 MiB  pages/home_page/HomePage  [emitted] [immutable]  pages/home_page/HomePage
+js/pages/home_page/HomePage-ae647a706aac9510833c.js.map  1.31 MiB  pages/home_page/HomePage  [emitted] [dev]        pages/home_page/HomePage
+        js/pages/sessions/Login-f35d99e61b1545c77109.js  1.28 MiB      pages/sessions/Login  [emitted] [immutable]  pages/sessions/Login
+    js/pages/sessions/Login-f35d99e61b1545c77109.js.map  1.45 MiB      pages/sessions/Login  [emitted] [dev]        pages/sessions/Login
+    js/pages/sessions/userLogin-a2fdac11740af81f9923.js  1.28 MiB  pages/sessions/userLogin  [emitted] [immutable]  pages/sessions/userLogin
+js/pages/sessions/userLogin-a2fdac11740af81f9923.js.map  1.45 MiB  pages/sessions/userLogin  [emitted] [dev]        pages/sessions/userLogin
+                          js/vi-d296e697a51dba30698f.js  4.19 KiB                        vi  [emitted] [immutable]  vi
+                      js/vi-d296e697a51dba30698f.js.map  3.51 KiB                        vi  [emitted] [dev]        vi
+                                          manifest.json  3.39 KiB                            [emitted]              
+Entrypoint application = js/application-ed259ab53dbeb67d5f8e.js js/application-ed259ab53dbeb67d5f8e.js.map
+Entrypoint atoms/input = js/atoms/input-b68bc27cd98e72f2d2bd.js js/atoms/input-b68bc27cd98e72f2d2bd.js.map
+Entrypoint en = js/en-dd8bfd3261ea1da250e1.js js/en-dd8bfd3261ea1da250e1.js.map
+Entrypoint hello_erb = js/hello_erb-29795fdceeedbd36f1b6.js js/hello_erb-29795fdceeedbd36f1b6.js.map
+Entrypoint pages/App = js/pages/App-bf30d98dfc1afd6092da.js js/pages/App-bf30d98dfc1afd6092da.js.map
+Entrypoint pages/home_page/HomePage = js/pages/home_page/HomePage-ae647a706aac9510833c.js js/pages/home_page/HomePage-ae647a706aac9510833c.js.map
+Entrypoint pages/sessions/Login = js/pages/sessions/Login-f35d99e61b1545c77109.js js/pages/sessions/Login-f35d99e61b1545c77109.js.map
+Entrypoint pages/sessions/userLogin = js/pages/sessions/userLogin-a2fdac11740af81f9923.js js/pages/sessions/userLogin-a2fdac11740af81f9923.js.map
+Entrypoint Routes = js/Routes-338580d96f4121fb93aa.js js/Routes-338580d96f4121fb93aa.js.map
+Entrypoint vi = js/vi-d296e697a51dba30698f.js js/vi-d296e697a51dba30698f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Routes.jsx] 234 bytes {Routes} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./app/javascript/packs/atoms/input.jsx] 2.83 KiB {atoms/input} {pages/App} {pages/sessions/Login} {pages/sessions/userLogin} [built]
+[./app/javascript/packs/en.js.erb] 331 bytes {en} [built] [failed] [1 error]
+[./app/javascript/packs/hello_erb.js.erb] 331 bytes {hello_erb} [built] [failed] [1 error]
+[./app/javascript/packs/pages/App.jsx] 2.45 KiB {pages/App} [built]
+[./app/javascript/packs/pages/home_page/HomePage.jsx] 753 bytes {pages/home_page/HomePage} {pages/App} [built]
+[./app/javascript/packs/pages/sessions/Login.jsx] 12.8 KiB {pages/sessions/Login} [built]
+[./app/javascript/packs/pages/sessions/userLogin.jsx] 10.2 KiB {pages/sessions/userLogin} {pages/App} [built]
+[./app/javascript/packs/vi.js.erb] 331 bytes {vi} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 33 hidden modules
+
+ERROR in ./app/javascript/packs/pages/sessions/Login.jsx 297:13-27
+"export 'BrowserHistory' was not found in 'react-router-dom'
+
+ERROR in ./app/javascript/packs/en.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/vi.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/hello_erb.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2806ms (Views: 2803.8ms | ActiveRecord: 0.0ms | Allocations: 6974)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 12:02:01 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 8.4ms | ActiveRecord: 0.0ms | Allocations: 5660)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 12:02:02 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 5)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 9ms (Views: 7.6ms | ActiveRecord: 0.0ms | Allocations: 5673)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 12:02:03 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms | Allocations: 5661)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 12:03:43 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: e3ffb6fd8c7a32a34d38
+Version: webpack 4.46.0
+Time: 1691ms
+Built at: 02/15/2023 12:03:46 PM
+                                                  Asset      Size                    Chunks                         Chunk Names
+                      js/Routes-338580d96f4121fb93aa.js   4.1 KiB                    Routes  [emitted] [immutable]  Routes
+                  js/Routes-338580d96f4121fb93aa.js.map  3.83 KiB                    Routes  [emitted] [dev]        Routes
+                 js/application-ed259ab53dbeb67d5f8e.js   160 KiB               application  [emitted] [immutable]  application
+             js/application-ed259ab53dbeb67d5f8e.js.map   181 KiB               application  [emitted] [dev]        application
+                 js/atoms/input-b68bc27cd98e72f2d2bd.js   199 KiB               atoms/input  [emitted] [immutable]  atoms/input
+             js/atoms/input-b68bc27cd98e72f2d2bd.js.map   219 KiB               atoms/input  [emitted] [dev]        atoms/input
+                          js/en-dd8bfd3261ea1da250e1.js  4.19 KiB                        en  [emitted] [immutable]  en
+                      js/en-dd8bfd3261ea1da250e1.js.map  3.51 KiB                        en  [emitted] [dev]        en
+                   js/hello_erb-29795fdceeedbd36f1b6.js  4.23 KiB                 hello_erb  [emitted] [immutable]  hello_erb
+               js/hello_erb-29795fdceeedbd36f1b6.js.map  3.53 KiB                 hello_erb  [emitted] [dev]        hello_erb
+                   js/pages/App-9ce3b13a6c72aea61c97.js  1.29 MiB                 pages/App  [emitted] [immutable]  pages/App
+               js/pages/App-9ce3b13a6c72aea61c97.js.map  1.45 MiB                 pages/App  [emitted] [dev]        pages/App
+    js/pages/home_page/HomePage-ae647a706aac9510833c.js  1.14 MiB  pages/home_page/HomePage  [emitted] [immutable]  pages/home_page/HomePage
+js/pages/home_page/HomePage-ae647a706aac9510833c.js.map  1.31 MiB  pages/home_page/HomePage  [emitted] [dev]        pages/home_page/HomePage
+        js/pages/sessions/Login-f35d99e61b1545c77109.js  1.28 MiB      pages/sessions/Login  [emitted] [immutable]  pages/sessions/Login
+    js/pages/sessions/Login-f35d99e61b1545c77109.js.map  1.45 MiB      pages/sessions/Login  [emitted] [dev]        pages/sessions/Login
+    js/pages/sessions/userLogin-0ed88fee0aa762055c2e.js  1.28 MiB  pages/sessions/userLogin  [emitted] [immutable]  pages/sessions/userLogin
+js/pages/sessions/userLogin-0ed88fee0aa762055c2e.js.map  1.45 MiB  pages/sessions/userLogin  [emitted] [dev]        pages/sessions/userLogin
+                          js/vi-d296e697a51dba30698f.js  4.19 KiB                        vi  [emitted] [immutable]  vi
+                      js/vi-d296e697a51dba30698f.js.map  3.51 KiB                        vi  [emitted] [dev]        vi
+                                          manifest.json  3.39 KiB                            [emitted]              
+Entrypoint application = js/application-ed259ab53dbeb67d5f8e.js js/application-ed259ab53dbeb67d5f8e.js.map
+Entrypoint atoms/input = js/atoms/input-b68bc27cd98e72f2d2bd.js js/atoms/input-b68bc27cd98e72f2d2bd.js.map
+Entrypoint en = js/en-dd8bfd3261ea1da250e1.js js/en-dd8bfd3261ea1da250e1.js.map
+Entrypoint hello_erb = js/hello_erb-29795fdceeedbd36f1b6.js js/hello_erb-29795fdceeedbd36f1b6.js.map
+Entrypoint pages/App = js/pages/App-9ce3b13a6c72aea61c97.js js/pages/App-9ce3b13a6c72aea61c97.js.map
+Entrypoint pages/home_page/HomePage = js/pages/home_page/HomePage-ae647a706aac9510833c.js js/pages/home_page/HomePage-ae647a706aac9510833c.js.map
+Entrypoint pages/sessions/Login = js/pages/sessions/Login-f35d99e61b1545c77109.js js/pages/sessions/Login-f35d99e61b1545c77109.js.map
+Entrypoint pages/sessions/userLogin = js/pages/sessions/userLogin-0ed88fee0aa762055c2e.js js/pages/sessions/userLogin-0ed88fee0aa762055c2e.js.map
+Entrypoint Routes = js/Routes-338580d96f4121fb93aa.js js/Routes-338580d96f4121fb93aa.js.map
+Entrypoint vi = js/vi-d296e697a51dba30698f.js js/vi-d296e697a51dba30698f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Routes.jsx] 234 bytes {Routes} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./app/javascript/packs/atoms/input.jsx] 2.83 KiB {atoms/input} {pages/App} {pages/sessions/Login} {pages/sessions/userLogin} [built]
+[./app/javascript/packs/en.js.erb] 331 bytes {en} [built] [failed] [1 error]
+[./app/javascript/packs/hello_erb.js.erb] 331 bytes {hello_erb} [built] [failed] [1 error]
+[./app/javascript/packs/pages/App.jsx] 2.45 KiB {pages/App} [built]
+[./app/javascript/packs/pages/home_page/HomePage.jsx] 753 bytes {pages/home_page/HomePage} {pages/App} [built]
+[./app/javascript/packs/pages/sessions/Login.jsx] 12.8 KiB {pages/sessions/Login} [built]
+[./app/javascript/packs/pages/sessions/userLogin.jsx] 10.3 KiB {pages/sessions/userLogin} {pages/App} [built]
+[./app/javascript/packs/vi.js.erb] 331 bytes {vi} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 33 hidden modules
+
+ERROR in ./app/javascript/packs/pages/sessions/Login.jsx 297:13-27
+"export 'BrowserHistory' was not found in 'react-router-dom'
+
+ERROR in ./app/javascript/packs/hello_erb.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/en.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/vi.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2807ms (Views: 2806.5ms | ActiveRecord: 0.0ms | Allocations: 6961)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 12:03:49 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 6.1ms | ActiveRecord: 0.0ms | Allocations: 5669)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 12:03:50 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 8ms (Views: 6.8ms | ActiveRecord: 0.0ms | Allocations: 5675)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 12:04:40 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: 25dfee21b6bdbf502847
+Version: webpack 4.46.0
+Time: 1661ms
+Built at: 02/15/2023 12:04:43 PM
+                                                  Asset      Size                    Chunks                         Chunk Names
+                      js/Routes-338580d96f4121fb93aa.js   4.1 KiB                    Routes  [emitted] [immutable]  Routes
+                  js/Routes-338580d96f4121fb93aa.js.map  3.83 KiB                    Routes  [emitted] [dev]        Routes
+                 js/application-ed259ab53dbeb67d5f8e.js   160 KiB               application  [emitted] [immutable]  application
+             js/application-ed259ab53dbeb67d5f8e.js.map   181 KiB               application  [emitted] [dev]        application
+                 js/atoms/input-b68bc27cd98e72f2d2bd.js   199 KiB               atoms/input  [emitted] [immutable]  atoms/input
+             js/atoms/input-b68bc27cd98e72f2d2bd.js.map   219 KiB               atoms/input  [emitted] [dev]        atoms/input
+                          js/en-dd8bfd3261ea1da250e1.js  4.19 KiB                        en  [emitted] [immutable]  en
+                      js/en-dd8bfd3261ea1da250e1.js.map  3.51 KiB                        en  [emitted] [dev]        en
+                   js/hello_erb-29795fdceeedbd36f1b6.js  4.23 KiB                 hello_erb  [emitted] [immutable]  hello_erb
+               js/hello_erb-29795fdceeedbd36f1b6.js.map  3.53 KiB                 hello_erb  [emitted] [dev]        hello_erb
+                   js/pages/App-84d803dfc35e0c7a3910.js  1.28 MiB                 pages/App  [emitted] [immutable]  pages/App
+               js/pages/App-84d803dfc35e0c7a3910.js.map  1.45 MiB                 pages/App  [emitted] [dev]        pages/App
+    js/pages/home_page/HomePage-ae647a706aac9510833c.js  1.14 MiB  pages/home_page/HomePage  [emitted] [immutable]  pages/home_page/HomePage
+js/pages/home_page/HomePage-ae647a706aac9510833c.js.map  1.31 MiB  pages/home_page/HomePage  [emitted] [dev]        pages/home_page/HomePage
+        js/pages/sessions/Login-f35d99e61b1545c77109.js  1.28 MiB      pages/sessions/Login  [emitted] [immutable]  pages/sessions/Login
+    js/pages/sessions/Login-f35d99e61b1545c77109.js.map  1.45 MiB      pages/sessions/Login  [emitted] [dev]        pages/sessions/Login
+    js/pages/sessions/userLogin-5c99514521f36d43b629.js  1.28 MiB  pages/sessions/userLogin  [emitted] [immutable]  pages/sessions/userLogin
+js/pages/sessions/userLogin-5c99514521f36d43b629.js.map  1.45 MiB  pages/sessions/userLogin  [emitted] [dev]        pages/sessions/userLogin
+                          js/vi-d296e697a51dba30698f.js  4.19 KiB                        vi  [emitted] [immutable]  vi
+                      js/vi-d296e697a51dba30698f.js.map  3.51 KiB                        vi  [emitted] [dev]        vi
+                                          manifest.json  3.39 KiB                            [emitted]              
+Entrypoint application = js/application-ed259ab53dbeb67d5f8e.js js/application-ed259ab53dbeb67d5f8e.js.map
+Entrypoint atoms/input = js/atoms/input-b68bc27cd98e72f2d2bd.js js/atoms/input-b68bc27cd98e72f2d2bd.js.map
+Entrypoint en = js/en-dd8bfd3261ea1da250e1.js js/en-dd8bfd3261ea1da250e1.js.map
+Entrypoint hello_erb = js/hello_erb-29795fdceeedbd36f1b6.js js/hello_erb-29795fdceeedbd36f1b6.js.map
+Entrypoint pages/App = js/pages/App-84d803dfc35e0c7a3910.js js/pages/App-84d803dfc35e0c7a3910.js.map
+Entrypoint pages/home_page/HomePage = js/pages/home_page/HomePage-ae647a706aac9510833c.js js/pages/home_page/HomePage-ae647a706aac9510833c.js.map
+Entrypoint pages/sessions/Login = js/pages/sessions/Login-f35d99e61b1545c77109.js js/pages/sessions/Login-f35d99e61b1545c77109.js.map
+Entrypoint pages/sessions/userLogin = js/pages/sessions/userLogin-5c99514521f36d43b629.js js/pages/sessions/userLogin-5c99514521f36d43b629.js.map
+Entrypoint Routes = js/Routes-338580d96f4121fb93aa.js js/Routes-338580d96f4121fb93aa.js.map
+Entrypoint vi = js/vi-d296e697a51dba30698f.js js/vi-d296e697a51dba30698f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Routes.jsx] 234 bytes {Routes} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./app/javascript/packs/atoms/input.jsx] 2.83 KiB {atoms/input} {pages/App} {pages/sessions/Login} {pages/sessions/userLogin} [built]
+[./app/javascript/packs/en.js.erb] 331 bytes {en} [built] [failed] [1 error]
+[./app/javascript/packs/hello_erb.js.erb] 331 bytes {hello_erb} [built] [failed] [1 error]
+[./app/javascript/packs/pages/App.jsx] 2.45 KiB {pages/App} [built]
+[./app/javascript/packs/pages/home_page/HomePage.jsx] 753 bytes {pages/home_page/HomePage} {pages/App} [built]
+[./app/javascript/packs/pages/sessions/Login.jsx] 12.8 KiB {pages/sessions/Login} [built]
+[./app/javascript/packs/pages/sessions/userLogin.jsx] 9.97 KiB {pages/sessions/userLogin} {pages/App} [built]
+[./app/javascript/packs/vi.js.erb] 331 bytes {vi} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 33 hidden modules
+
+ERROR in ./app/javascript/packs/pages/sessions/Login.jsx 297:13-27
+"export 'BrowserHistory' was not found in 'react-router-dom'
+
+ERROR in ./app/javascript/packs/en.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/hello_erb.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/vi.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2780ms (Views: 2779.6ms | ActiveRecord: 0.0ms | Allocations: 6971)
+
+
+Started POST "/users/sign_in" for ::1 at 2023-02-15 12:04:52 +0700
+Processing by SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"aaa@gmail.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"aaa@gmail.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (7.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'aaa@gmail.com' LIMIT 1[0m
+  ↳ app/controllers/sessions_controller.rb:3:in `create'
+Completed 200 OK in 293ms (Views: 0.2ms | ActiveRecord: 7.3ms | Allocations: 2139)
+
+
+Started GET "/" for ::1 at 2023-02-15 12:05:08 +0700
+Processing by HomepageController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 258)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 12:05:08 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.2ms | ActiveRecord: 0.0ms | Allocations: 5717)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-02-15 12:06:10 +0700
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compilation failed:
+Hash: f4cf97b2caa9cdbc4510
+Version: webpack 4.46.0
+Time: 1650ms
+Built at: 02/15/2023 12:06:12 PM
+                                                  Asset      Size                    Chunks                         Chunk Names
+                      js/Routes-338580d96f4121fb93aa.js   4.1 KiB                    Routes  [emitted] [immutable]  Routes
+                  js/Routes-338580d96f4121fb93aa.js.map  3.83 KiB                    Routes  [emitted] [dev]        Routes
+                 js/application-ed259ab53dbeb67d5f8e.js   160 KiB               application  [emitted] [immutable]  application
+             js/application-ed259ab53dbeb67d5f8e.js.map   181 KiB               application  [emitted] [dev]        application
+                 js/atoms/input-b68bc27cd98e72f2d2bd.js   199 KiB               atoms/input  [emitted] [immutable]  atoms/input
+             js/atoms/input-b68bc27cd98e72f2d2bd.js.map   219 KiB               atoms/input  [emitted] [dev]        atoms/input
+                          js/en-dd8bfd3261ea1da250e1.js  4.19 KiB                        en  [emitted] [immutable]  en
+                      js/en-dd8bfd3261ea1da250e1.js.map  3.51 KiB                        en  [emitted] [dev]        en
+                   js/hello_erb-29795fdceeedbd36f1b6.js  4.23 KiB                 hello_erb  [emitted] [immutable]  hello_erb
+               js/hello_erb-29795fdceeedbd36f1b6.js.map  3.53 KiB                 hello_erb  [emitted] [dev]        hello_erb
+                   js/pages/App-36877f7f6b5c4760e4a7.js  1.28 MiB                 pages/App  [emitted] [immutable]  pages/App
+               js/pages/App-36877f7f6b5c4760e4a7.js.map  1.45 MiB                 pages/App  [emitted] [dev]        pages/App
+    js/pages/home_page/HomePage-ae647a706aac9510833c.js  1.14 MiB  pages/home_page/HomePage  [emitted] [immutable]  pages/home_page/HomePage
+js/pages/home_page/HomePage-ae647a706aac9510833c.js.map  1.31 MiB  pages/home_page/HomePage  [emitted] [dev]        pages/home_page/HomePage
+        js/pages/sessions/Login-f35d99e61b1545c77109.js  1.28 MiB      pages/sessions/Login  [emitted] [immutable]  pages/sessions/Login
+    js/pages/sessions/Login-f35d99e61b1545c77109.js.map  1.45 MiB      pages/sessions/Login  [emitted] [dev]        pages/sessions/Login
+    js/pages/sessions/userLogin-c742d54db3882a10c1f2.js  1.28 MiB  pages/sessions/userLogin  [emitted] [immutable]  pages/sessions/userLogin
+js/pages/sessions/userLogin-c742d54db3882a10c1f2.js.map  1.45 MiB  pages/sessions/userLogin  [emitted] [dev]        pages/sessions/userLogin
+                          js/vi-d296e697a51dba30698f.js  4.19 KiB                        vi  [emitted] [immutable]  vi
+                      js/vi-d296e697a51dba30698f.js.map  3.51 KiB                        vi  [emitted] [dev]        vi
+                                          manifest.json  3.39 KiB                            [emitted]              
+Entrypoint application = js/application-ed259ab53dbeb67d5f8e.js js/application-ed259ab53dbeb67d5f8e.js.map
+Entrypoint atoms/input = js/atoms/input-b68bc27cd98e72f2d2bd.js js/atoms/input-b68bc27cd98e72f2d2bd.js.map
+Entrypoint en = js/en-dd8bfd3261ea1da250e1.js js/en-dd8bfd3261ea1da250e1.js.map
+Entrypoint hello_erb = js/hello_erb-29795fdceeedbd36f1b6.js js/hello_erb-29795fdceeedbd36f1b6.js.map
+Entrypoint pages/App = js/pages/App-36877f7f6b5c4760e4a7.js js/pages/App-36877f7f6b5c4760e4a7.js.map
+Entrypoint pages/home_page/HomePage = js/pages/home_page/HomePage-ae647a706aac9510833c.js js/pages/home_page/HomePage-ae647a706aac9510833c.js.map
+Entrypoint pages/sessions/Login = js/pages/sessions/Login-f35d99e61b1545c77109.js js/pages/sessions/Login-f35d99e61b1545c77109.js.map
+Entrypoint pages/sessions/userLogin = js/pages/sessions/userLogin-c742d54db3882a10c1f2.js js/pages/sessions/userLogin-c742d54db3882a10c1f2.js.map
+Entrypoint Routes = js/Routes-338580d96f4121fb93aa.js js/Routes-338580d96f4121fb93aa.js.map
+Entrypoint vi = js/vi-d296e697a51dba30698f.js js/vi-d296e697a51dba30698f.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/Routes.jsx] 234 bytes {Routes} [built]
+[./app/javascript/packs/application.js] 802 bytes {application} [built]
+[./app/javascript/packs/atoms/input.jsx] 2.83 KiB {atoms/input} {pages/App} {pages/sessions/Login} {pages/sessions/userLogin} [built]
+[./app/javascript/packs/en.js.erb] 331 bytes {en} [built] [failed] [1 error]
+[./app/javascript/packs/hello_erb.js.erb] 331 bytes {hello_erb} [built] [failed] [1 error]
+[./app/javascript/packs/pages/App.jsx] 2.45 KiB {pages/App} [built]
+[./app/javascript/packs/pages/home_page/HomePage.jsx] 753 bytes {pages/home_page/HomePage} {pages/App} [built]
+[./app/javascript/packs/pages/sessions/Login.jsx] 12.8 KiB {pages/sessions/Login} [built]
+[./app/javascript/packs/pages/sessions/userLogin.jsx] 9.97 KiB {pages/sessions/userLogin} {pages/App} [built]
+[./app/javascript/packs/vi.js.erb] 331 bytes {vi} [built] [failed] [1 error]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 33 hidden modules
+
+ERROR in ./app/javascript/packs/pages/sessions/Login.jsx 297:13-27
+"export 'BrowserHistory' was not found in 'react-router-dom'
+
+ERROR in ./app/javascript/packs/en.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/vi.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+ERROR in ./app/javascript/packs/hello_erb.js.erb
+Module build failed (from ./node_modules/rails-erb-loader/index.js):
+Error: spawn bin/rails EACCES
+    at Process.ChildProcess._handle.onexit (node:internal/child_process:283:19)
+    at onErrorNT (node:internal/child_process:478:16)
+    at processTicksAndRejections (node:internal/process/task_queues:83:21)
+
+
+Browserslist: caniuse-lite is outdated. Please run:
+  npx browserslist@latest --update-db
+  Why you should do it regularly: https://github.com/browserslist/browserslist#browsers-data-updating
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-property-in-object since the "loose" mode option was set to "true" for @babel/plugin-proposal-class-properties.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-property-in-object", { "loose": true }]
+to the "plugins" section of your Babel config.
+Though the "loose" option was set to "false" in your @babel/preset-env config, it will not be used for @babel/plugin-proposal-private-methods since the "loose" mode option was set to "true" for @babel/plugin-proposal-private-property-in-object.
+The "loose" option must be the same for @babel/plugin-proposal-class-properties, @babel/plugin-proposal-private-methods and @babel/plugin-proposal-private-property-in-object (when they are enabled): you can silence this warning by explicitly adding
+	["@babel/plugin-proposal-private-methods", { "loose": true }]
+to the "plugins" section of your Babel config.
+
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 2766ms (Views: 2765.7ms | ActiveRecord: 0.0ms | Allocations: 6985)
+
+

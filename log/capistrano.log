@@ -1,0 +1,980 @@
+# Logfile created on 2023-02-15 13:36:27 +0700 by logger.rb/v1.4.2
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 13:36:27 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [f17313aa] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [f17313aa] Command: /usr/bin/env mkdir -p /tmp
+  INFO [f17313aa] Finished in 2.228 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-504154f7ce069d15f383.sh 0.0%
+  INFO Uploading /tmp/git-ssh-504154f7ce069d15f383.sh 100.0%
+  INFO [d764f0f0] Running /usr/bin/env chmod 700 /tmp/git-ssh-504154f7ce069d15f383.sh as deploy@18.183.210.148
+ DEBUG [d764f0f0] Command: /usr/bin/env chmod 700 /tmp/git-ssh-504154f7ce069d15f383.sh
+  INFO [d764f0f0] Finished in 0.295 seconds with exit status 0 (successful).
+  INFO [c52e92ff] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [c52e92ff] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-504154f7ce069d15f383.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [c52e92ff] 	Warning: Permanently added 'github.com,20.27.177.113' (ECDSA) to the list of known hosts.
+ DEBUG [c52e92ff] 	
+ DEBUG [c52e92ff] 	f884dcc77426537b321ea8240d23b02deb149d5b
+ DEBUG [c52e92ff] 		HEAD
+  INFO [c52e92ff] Finished in 2.468 seconds with exit status 0 (successful).
+  INFO [2d357a99] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [2d357a99] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [2d357a99] Finished in 0.294 seconds with exit status 0 (successful).
+  INFO [19b15b46] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [19b15b46] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+ DEBUG [19b15b46] 	mkdir: 
+ DEBUG [19b15b46] 	cannot create directory '/deploy/apps/demo_server/shared/log'
+ DEBUG [19b15b46] 	: Permission denied
+ DEBUG [19b15b46] 	
+ DEBUG [19b15b46] 	mkdir: 
+ DEBUG [19b15b46] 	cannot create directory '/deploy/apps/demo_server/shared/tmp'
+ DEBUG [19b15b46] 	: Permission denied
+ DEBUG [19b15b46] 	
+ DEBUG [19b15b46] 	mkdir: 
+ DEBUG [19b15b46] 	cannot create directory '/deploy/apps/demo_server/shared/tmp'
+ DEBUG [19b15b46] 	: Permission denied
+ DEBUG [19b15b46] 	
+ DEBUG [19b15b46] 	mkdir: 
+ DEBUG [19b15b46] 	cannot create directory '/deploy/apps/demo_server/shared/tmp'
+ DEBUG [19b15b46] 	: Permission denied
+ DEBUG [19b15b46] 	
+ DEBUG [19b15b46] 	mkdir: 
+ DEBUG [19b15b46] 	cannot create directory '/deploy/apps/demo_server/shared/vendor'
+ DEBUG [19b15b46] 	: Permission denied
+ DEBUG [19b15b46] 	
+ DEBUG [19b15b46] 	mkdir: 
+ DEBUG [19b15b46] 	cannot create directory '/deploy/apps/demo_server/shared/public'
+ DEBUG [19b15b46] 	: Permission denied
+ DEBUG [19b15b46] 	
+ DEBUG [19b15b46] 	mkdir: 
+ DEBUG [19b15b46] 	cannot create directory '/deploy/apps/demo_server/shared/public'
+ DEBUG [19b15b46] 	: Permission denied
+ DEBUG [19b15b46] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 13:39:22 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [089a68fc] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [089a68fc] Command: /usr/bin/env mkdir -p /tmp
+  INFO [089a68fc] Finished in 1.674 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ed91d6493e6a1d6ca445.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ed91d6493e6a1d6ca445.sh 100.0%
+  INFO [8c6cbe3d] Running /usr/bin/env chmod 700 /tmp/git-ssh-ed91d6493e6a1d6ca445.sh as deploy@18.183.210.148
+ DEBUG [8c6cbe3d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-ed91d6493e6a1d6ca445.sh
+  INFO [8c6cbe3d] Finished in 0.280 seconds with exit status 0 (successful).
+  INFO [99ac2bc8] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [99ac2bc8] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ed91d6493e6a1d6ca445.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [99ac2bc8] 	f884dcc77426537b321ea8240d23b02deb149d5b
+ DEBUG [99ac2bc8] 		HEAD
+  INFO [99ac2bc8] Finished in 2.419 seconds with exit status 0 (successful).
+  INFO [a9674a5c] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [a9674a5c] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [a9674a5c] Finished in 0.283 seconds with exit status 0 (successful).
+  INFO [92432977] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [92432977] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+ DEBUG [92432977] 	mkdir: 
+ DEBUG [92432977] 	cannot create directory '/deploy/apps/demo_server/shared/log'
+ DEBUG [92432977] 	: Permission denied
+ DEBUG [92432977] 	
+ DEBUG [92432977] 	mkdir: 
+ DEBUG [92432977] 	cannot create directory '/deploy/apps/demo_server/shared/tmp'
+ DEBUG [92432977] 	: Permission denied
+ DEBUG [92432977] 	
+ DEBUG [92432977] 	mkdir: 
+ DEBUG [92432977] 	cannot create directory '/deploy/apps/demo_server/shared/tmp'
+ DEBUG [92432977] 	: Permission denied
+ DEBUG [92432977] 	
+ DEBUG [92432977] 	mkdir: 
+ DEBUG [92432977] 	cannot create directory '/deploy/apps/demo_server/shared/tmp'
+ DEBUG [92432977] 	: Permission denied
+ DEBUG [92432977] 	
+ DEBUG [92432977] 	mkdir: 
+ DEBUG [92432977] 	cannot create directory '/deploy/apps/demo_server/shared/vendor'
+ DEBUG [92432977] 	: Permission denied
+ DEBUG [92432977] 	
+ DEBUG [92432977] 	mkdir: 
+ DEBUG [92432977] 	cannot create directory '/deploy/apps/demo_server/shared/public'
+ DEBUG [92432977] 	: Permission denied
+ DEBUG [92432977] 	
+ DEBUG [92432977] 	mkdir: 
+ DEBUG [92432977] 	cannot create directory '/deploy/apps/demo_server/shared/public'
+ DEBUG [92432977] 	: Permission denied
+ DEBUG [92432977] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 13:42:15 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [a935c240] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [a935c240] Command: /usr/bin/env mkdir -p /tmp
+  INFO [a935c240] Finished in 1.752 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-a394868998ae15df56f9.sh 0.0%
+  INFO Uploading /tmp/git-ssh-a394868998ae15df56f9.sh 100.0%
+  INFO [981b226d] Running /usr/bin/env chmod 700 /tmp/git-ssh-a394868998ae15df56f9.sh as deploy@18.183.210.148
+ DEBUG [981b226d] Command: /usr/bin/env chmod 700 /tmp/git-ssh-a394868998ae15df56f9.sh
+  INFO [981b226d] Finished in 0.296 seconds with exit status 0 (successful).
+  INFO [4845fff7] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [4845fff7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a394868998ae15df56f9.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [4845fff7] 	f884dcc77426537b321ea8240d23b02deb149d5b	HEAD
+  INFO [4845fff7] Finished in 2.354 seconds with exit status 0 (successful).
+  INFO [5ab6d88b] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [5ab6d88b] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [5ab6d88b] Finished in 0.293 seconds with exit status 0 (successful).
+  INFO [eeca8eb7] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [eeca8eb7] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+ DEBUG [eeca8eb7] 	mkdir: 
+ DEBUG [eeca8eb7] 	cannot create directory '/deploy/apps/demo_server/shared/log'
+ DEBUG [eeca8eb7] 	: Permission denied
+ DEBUG [eeca8eb7] 	
+ DEBUG [eeca8eb7] 	mkdir: 
+ DEBUG [eeca8eb7] 	cannot create directory '/deploy/apps/demo_server/shared/tmp'
+ DEBUG [eeca8eb7] 	: Permission denied
+ DEBUG [eeca8eb7] 	
+ DEBUG [eeca8eb7] 	mkdir: 
+ DEBUG [eeca8eb7] 	cannot create directory '/deploy/apps/demo_server/shared/tmp'
+ DEBUG [eeca8eb7] 	: Permission denied
+ DEBUG [eeca8eb7] 	
+ DEBUG [eeca8eb7] 	mkdir: 
+ DEBUG [eeca8eb7] 	cannot create directory '/deploy/apps/demo_server/shared/tmp'
+ DEBUG [eeca8eb7] 	: Permission denied
+ DEBUG [eeca8eb7] 	
+ DEBUG [eeca8eb7] 	mkdir: 
+ DEBUG [eeca8eb7] 	cannot create directory '/deploy/apps/demo_server/shared/vendor'
+ DEBUG [eeca8eb7] 	: Permission denied
+ DEBUG [eeca8eb7] 	
+ DEBUG [eeca8eb7] 	mkdir: 
+ DEBUG [eeca8eb7] 	cannot create directory '/deploy/apps/demo_server/shared/public'
+ DEBUG [eeca8eb7] 	: Permission denied
+ DEBUG [eeca8eb7] 	
+ DEBUG [eeca8eb7] 	mkdir: 
+ DEBUG [eeca8eb7] 	cannot create directory '/deploy/apps/demo_server/shared/public'
+ DEBUG [eeca8eb7] 	: Permission denied
+ DEBUG [eeca8eb7] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 13:42:58 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [b8366693] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [b8366693] Command: /usr/bin/env mkdir -p /tmp
+  INFO [b8366693] Finished in 1.686 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-1e48a5b533624d754056.sh 0.0%
+  INFO Uploading /tmp/git-ssh-1e48a5b533624d754056.sh 100.0%
+  INFO [054a8f52] Running /usr/bin/env chmod 700 /tmp/git-ssh-1e48a5b533624d754056.sh as deploy@18.183.210.148
+ DEBUG [054a8f52] Command: /usr/bin/env chmod 700 /tmp/git-ssh-1e48a5b533624d754056.sh
+  INFO [054a8f52] Finished in 0.285 seconds with exit status 0 (successful).
+  INFO [ba3129e2] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [ba3129e2] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-1e48a5b533624d754056.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [ba3129e2] 	f884dcc77426537b321ea8240d23b02deb149d5b
+ DEBUG [ba3129e2] 		HEAD
+  INFO [ba3129e2] Finished in 2.409 seconds with exit status 0 (successful).
+  INFO [cd666648] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [cd666648] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [cd666648] Finished in 0.282 seconds with exit status 0 (successful).
+  INFO [da1ce444] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [da1ce444] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+  INFO [da1ce444] Finished in 0.278 seconds with exit status 0 (successful).
+  INFO [ca2241f3] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config as deploy@18.183.210.148
+ DEBUG [ca2241f3] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config
+  INFO [ca2241f3] Finished in 0.323 seconds with exit status 0 (successful).
+ DEBUG [4c048432] Running [ -f /deploy/apps/demo_server/shared/config/database.yml ] as deploy@18.183.210.148
+ DEBUG [4c048432] Command: [ -f /deploy/apps/demo_server/shared/config/database.yml ]
+ DEBUG [4c048432] Finished in 0.281 seconds with exit status 1 (failed).
+ ERROR linked file /deploy/apps/demo_server/shared/config/database.yml does not exist on 18.183.210.148
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 13:46:19 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [17118625] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [17118625] Command: /usr/bin/env mkdir -p /tmp
+  INFO [17118625] Finished in 1.676 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-51bf1af01dc8d837b128.sh 0.0%
+  INFO Uploading /tmp/git-ssh-51bf1af01dc8d837b128.sh 100.0%
+  INFO [e92cfffb] Running /usr/bin/env chmod 700 /tmp/git-ssh-51bf1af01dc8d837b128.sh as deploy@18.183.210.148
+ DEBUG [e92cfffb] Command: /usr/bin/env chmod 700 /tmp/git-ssh-51bf1af01dc8d837b128.sh
+  INFO [e92cfffb] Finished in 0.280 seconds with exit status 0 (successful).
+  INFO [ee9b8028] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [ee9b8028] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-51bf1af01dc8d837b128.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [ee9b8028] 	f884dcc77426537b321ea8240d23b02deb149d5b
+ DEBUG [ee9b8028] 		HEAD
+  INFO [ee9b8028] Finished in 2.534 seconds with exit status 0 (successful).
+  INFO [b867d231] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [b867d231] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [b867d231] Finished in 0.279 seconds with exit status 0 (successful).
+  INFO [1ef1a250] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [1ef1a250] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+  INFO [1ef1a250] Finished in 0.279 seconds with exit status 0 (successful).
+  INFO [9a160c78] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config as deploy@18.183.210.148
+ DEBUG [9a160c78] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config
+  INFO [9a160c78] Finished in 0.318 seconds with exit status 0 (successful).
+ DEBUG [712c0c03] Running [ -f /deploy/apps/demo_server/shared/config/database.yml ] as deploy@18.183.210.148
+ DEBUG [712c0c03] Command: [ -f /deploy/apps/demo_server/shared/config/database.yml ]
+ DEBUG [712c0c03] Finished in 0.280 seconds with exit status 0 (successful).
+ DEBUG [e2f736f1] Running [ -f /deploy/apps/demo_server/shared/config/application.yml ] as deploy@18.183.210.148
+ DEBUG [e2f736f1] Command: [ -f /deploy/apps/demo_server/shared/config/application.yml ]
+ DEBUG [e2f736f1] Finished in 0.321 seconds with exit status 0 (successful).
+ DEBUG [b014ac29] Running [ -f /deploy/apps/demo_server/current/REVISION ] as deploy@18.183.210.148
+ DEBUG [b014ac29] Command: [ -f /deploy/apps/demo_server/current/REVISION ]
+ DEBUG [b014ac29] Finished in 0.280 seconds with exit status 1 (failed).
+ DEBUG [d835809f] Running [ -f /deploy/apps/demo_server/repo/HEAD ] as deploy@18.183.210.148
+ DEBUG [d835809f] Command: [ -f /deploy/apps/demo_server/repo/HEAD ]
+ DEBUG [d835809f] Finished in 0.323 seconds with exit status 1 (failed).
+ DEBUG [6ba480bd] Running if test ! -d /deploy/apps/demo_server; then echo "Directory does not exist '/deploy/apps/demo_server'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [6ba480bd] Command: if test ! -d /deploy/apps/demo_server; then echo "Directory does not exist '/deploy/apps/demo_server'" 1>&2; false; fi
+ DEBUG [6ba480bd] Finished in 0.284 seconds with exit status 0 (successful).
+  INFO [b8dfe8c4] Running /usr/bin/env git clone --mirror git@github.com:thaonguyen1995/Reactjs-App.git /deploy/apps/demo_server/repo as deploy@18.183.210.148
+ DEBUG [b8dfe8c4] Command: cd /deploy/apps/demo_server && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-51bf1af01dc8d837b128.sh" ; /usr/bin/env git clone --mirror git@github.com:thaonguyen1995/Reactjs-App.git /deploy/apps/demo_server/repo )
+ DEBUG [b8dfe8c4] 	Cloning into bare repository '/deploy/apps/demo_server/repo'...
+ DEBUG [b8dfe8c4] 	
+ DEBUG [b8dfe8c4] 	remote: Enumerating objects: 294, done.[K
+ DEBUG [b8dfe8c4] 	
+ DEBUG [b8dfe8c4] 	remote: Counting objects:   3% (1/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:   7% (2/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  11% (3/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  15% (4/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  19% (5/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  23% (6/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  26% (7/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  30% (8/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  34% (9/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  38% (10/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  42% (11/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  46% (12/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  50% (13/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  53% (14/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  57% (15/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  61% (16/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  65% (17/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  69% (18/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  73% (19/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  76% (20/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  80% (21/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  84% (22/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  88% (23/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  92% (24/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects:  96% (25/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects: 100% (26/26)[K
+ DEBUG [b8dfe8c4] 	remote: Counting objects: 100% (26/26), done.[K
+ DEBUG [b8dfe8c4] 	
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:   4% (1/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:   9% (2/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  14% (3/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  19% (4/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  23% (5/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  28% (6/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  33% (7/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  38% (8/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  42% (9/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  47% (10/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  52% (11/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  57% (12/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  61% (13/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  66% (14/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  71% (15/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  76% (16/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  80% (17/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  85% (18/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  90% (19/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects:  95% (20/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects: 100% (21/21)[K
+ DEBUG [b8dfe8c4] 	remote: Compressing objects: 100% (21/21), done.[K
+ DEBUG [b8dfe8c4] 	
+ DEBUG [b8dfe8c4] 	Receiving objects:   0% (1/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:   1% (3/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:   2% (6/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:   3% (9/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:   4% (12/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:   5% (15/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:   6% (18/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:   7% (21/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:   8% (24/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:   9% (27/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:  10% (30/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:  11% (33/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:  12% (36/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:  13% (39/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:  14% (42/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:  15% (45/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:  16% (48/294)   
+ DEBUG [b8dfe8c4] 	Receiving objects:  17% (50/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  18% (53/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  19% (56/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  20% (59/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  21% (62/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  22% (65/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  23% (68/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  24% (71/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  25% (74/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  26% (77/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  27% (80/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  28% (83/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  29% (86/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  30% (89/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  31% (92/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  32% (95/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  33% (98/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  34% (100/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  35% (103/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  36% (106/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  37% (109/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  38% (112/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  39% (115/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  40% (118/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  41% (121/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  42% (124/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  43% (127/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  44% (130/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  45% (133/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  46% (136/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  47% (139/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  48% (142/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  49% (145/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  50% (147/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  51% (150/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  52% (153/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  53% (156/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  54% (159/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  55% (162/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  56% (165/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  57% (168/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  58% (171/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  59% (174/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  60% (177/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  61% (180/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  62% (183/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  63% (186/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  64% (189/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  65% (192/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  66% (195/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  67% (197/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  68% (200/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  69% (203/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  70% (206/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  71% (209/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  72% (212/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  73% (215/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  74% (218/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  75% (221/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  76% (224/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  77% (227/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  78% (230/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  79% (233/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  80% (236/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  81% (239/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  82% (242/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  83% (245/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  84% (247/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  85% (250/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  86% (253/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  87% (256/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  88% (259/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  89% (262/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  90% (265/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  91% (268/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  92% (271/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  93% (274/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  94% (277/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  95% (280/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  96% (283/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  97% (286/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  98% (289/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects:  99% (292/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	remote: Total 294 (delta 5), reused 11 (delta 1), pack-reused 268[K
+ DEBUG [b8dfe8c4] 	
+ DEBUG [b8dfe8c4] 	Receiving objects: 100% (294/294), 212.00 KiB | 408.00 KiB/s   
+ DEBUG [b8dfe8c4] 	Receiving objects: 100% (294/294), 913.79 KiB | 1.06 MiB/s, done.
+ DEBUG [b8dfe8c4] 	
+ DEBUG [b8dfe8c4] 	Resolving deltas:   2% (2/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:   6% (6/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  13% (12/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  25% (23/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  28% (25/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  30% (27/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  32% (29/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  34% (31/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  41% (37/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  42% (38/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  43% (39/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  44% (40/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  48% (43/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  49% (44/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  50% (45/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  58% (52/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  76% (68/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  77% (69/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  79% (71/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  82% (73/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  85% (76/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  86% (77/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  88% (79/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  89% (80/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  91% (81/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  92% (82/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  93% (83/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  94% (84/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas:  98% (88/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas: 100% (89/89)   
+ DEBUG [b8dfe8c4] 	Resolving deltas: 100% (89/89), done.
+ DEBUG [b8dfe8c4] 	
+  INFO [b8dfe8c4] Finished in 3.504 seconds with exit status 0 (successful).
+ DEBUG [d216ddde] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [d216ddde] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [d216ddde] Finished in 0.241 seconds with exit status 0 (successful).
+  INFO [34042e15] Running /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git as deploy@18.183.210.148
+ DEBUG [34042e15] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-51bf1af01dc8d837b128.sh" ; /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git )
+  INFO [34042e15] Finished in 0.328 seconds with exit status 0 (successful).
+  INFO [3ea5da39] Running /usr/bin/env git remote update --prune as deploy@18.183.210.148
+ DEBUG [3ea5da39] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-51bf1af01dc8d837b128.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [3ea5da39] 	Fetching origin
+ DEBUG [3ea5da39] 	
+  INFO [3ea5da39] Finished in 2.397 seconds with exit status 0 (successful).
+ DEBUG [de26e5c7] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [de26e5c7] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [de26e5c7] Finished in 0.275 seconds with exit status 0 (successful).
+  INFO [11f0506e] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215064626 as deploy@18.183.210.148
+ DEBUG [11f0506e] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-51bf1af01dc8d837b128.sh" ; /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215064626 )
+  INFO [11f0506e] Finished in 0.327 seconds with exit status 0 (successful).
+  INFO [3778ee9f] Running /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215064626 as deploy@18.183.210.148
+ DEBUG [3778ee9f] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-51bf1af01dc8d837b128.sh" ; /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215064626 )
+ DEBUG [3778ee9f] 	fatal: Not a valid object name
+ DEBUG [3778ee9f] 	
+ DEBUG [3778ee9f] 	tar: 
+ DEBUG [3778ee9f] 	This does not look like a tar archive
+ DEBUG [3778ee9f] 	
+ DEBUG [3778ee9f] 	tar: 
+ DEBUG [3778ee9f] 	Exiting with failure status due to previous errors
+ DEBUG [3778ee9f] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 13:49:20 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [1815faef] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [1815faef] Command: /usr/bin/env mkdir -p /tmp
+  INFO [1815faef] Finished in 1.686 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-2829ab13cd1fab264c49.sh 0.0%
+  INFO Uploading /tmp/git-ssh-2829ab13cd1fab264c49.sh 100.0%
+  INFO [a41fe504] Running /usr/bin/env chmod 700 /tmp/git-ssh-2829ab13cd1fab264c49.sh as deploy@18.183.210.148
+ DEBUG [a41fe504] Command: /usr/bin/env chmod 700 /tmp/git-ssh-2829ab13cd1fab264c49.sh
+  INFO [a41fe504] Finished in 0.278 seconds with exit status 0 (successful).
+  INFO [5ed34355] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [5ed34355] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2829ab13cd1fab264c49.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [5ed34355] 	f884dcc77426537b321ea8240d23b02deb149d5b
+ DEBUG [5ed34355] 		HEAD
+  INFO [5ed34355] Finished in 2.308 seconds with exit status 0 (successful).
+  INFO [7dd74e2f] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [7dd74e2f] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [7dd74e2f] Finished in 0.286 seconds with exit status 0 (successful).
+  INFO [6b1eae32] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [6b1eae32] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+  INFO [6b1eae32] Finished in 0.276 seconds with exit status 0 (successful).
+  INFO [a3c3f122] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config as deploy@18.183.210.148
+ DEBUG [a3c3f122] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config
+  INFO [a3c3f122] Finished in 0.321 seconds with exit status 0 (successful).
+ DEBUG [5634fd08] Running [ -f /deploy/apps/demo_server/shared/config/database.yml ] as deploy@18.183.210.148
+ DEBUG [5634fd08] Command: [ -f /deploy/apps/demo_server/shared/config/database.yml ]
+ DEBUG [5634fd08] Finished in 0.278 seconds with exit status 0 (successful).
+ DEBUG [20d41ffd] Running [ -f /deploy/apps/demo_server/shared/config/application.yml ] as deploy@18.183.210.148
+ DEBUG [20d41ffd] Command: [ -f /deploy/apps/demo_server/shared/config/application.yml ]
+ DEBUG [20d41ffd] Finished in 0.320 seconds with exit status 0 (successful).
+ DEBUG [cd047e02] Running [ -f /deploy/apps/demo_server/current/REVISION ] as deploy@18.183.210.148
+ DEBUG [cd047e02] Command: [ -f /deploy/apps/demo_server/current/REVISION ]
+ DEBUG [cd047e02] Finished in 0.282 seconds with exit status 1 (failed).
+ DEBUG [3485b2e2] Running [ -f /deploy/apps/demo_server/repo/HEAD ] as deploy@18.183.210.148
+ DEBUG [3485b2e2] Command: [ -f /deploy/apps/demo_server/repo/HEAD ]
+ DEBUG [3485b2e2] Finished in 0.320 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /deploy/apps/demo_server/repo
+ DEBUG [c8348319] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [c8348319] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [c8348319] Finished in 0.278 seconds with exit status 0 (successful).
+  INFO [23f6a569] Running /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git as deploy@18.183.210.148
+ DEBUG [23f6a569] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2829ab13cd1fab264c49.sh" ; /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git )
+  INFO [23f6a569] Finished in 0.324 seconds with exit status 0 (successful).
+  INFO [234a6eb2] Running /usr/bin/env git remote update --prune as deploy@18.183.210.148
+ DEBUG [234a6eb2] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2829ab13cd1fab264c49.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [234a6eb2] 	Fetching origin
+ DEBUG [234a6eb2] 	
+  INFO [234a6eb2] Finished in 2.327 seconds with exit status 0 (successful).
+ DEBUG [0d3c1cc2] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [0d3c1cc2] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [0d3c1cc2] Finished in 0.274 seconds with exit status 0 (successful).
+  INFO [63c7a24d] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215064927 as deploy@18.183.210.148
+ DEBUG [63c7a24d] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2829ab13cd1fab264c49.sh" ; /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215064927 )
+  INFO [63c7a24d] Finished in 0.327 seconds with exit status 0 (successful).
+  INFO [cff3eb9d] Running /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215064927 as deploy@18.183.210.148
+ DEBUG [cff3eb9d] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-2829ab13cd1fab264c49.sh" ; /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215064927 )
+ DEBUG [cff3eb9d] 	fatal: Not a valid object name
+ DEBUG [cff3eb9d] 	
+ DEBUG [cff3eb9d] 	tar: 
+ DEBUG [cff3eb9d] 	This does not look like a tar archive
+ DEBUG [cff3eb9d] 	
+ DEBUG [cff3eb9d] 	tar: 
+ DEBUG [cff3eb9d] 	Exiting with failure status due to previous errors
+ DEBUG [cff3eb9d] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 13:51:11 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [e9787d05] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [e9787d05] Command: /usr/bin/env mkdir -p /tmp
+  INFO [e9787d05] Finished in 4.529 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-e19aacadbc658fc23617.sh 0.0%
+  INFO Uploading /tmp/git-ssh-e19aacadbc658fc23617.sh 100.0%
+  INFO [5ea50a66] Running /usr/bin/env chmod 700 /tmp/git-ssh-e19aacadbc658fc23617.sh as deploy@18.183.210.148
+ DEBUG [5ea50a66] Command: /usr/bin/env chmod 700 /tmp/git-ssh-e19aacadbc658fc23617.sh
+  INFO [5ea50a66] Finished in 0.635 seconds with exit status 0 (successful).
+  INFO [ab3ea18e] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [ab3ea18e] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e19aacadbc658fc23617.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [ab3ea18e] 	f884dcc77426537b321ea8240d23b02deb149d5b
+ DEBUG [ab3ea18e] 		HEAD
+  INFO [ab3ea18e] Finished in 2.807 seconds with exit status 0 (successful).
+  INFO [3571f701] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [3571f701] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [3571f701] Finished in 0.480 seconds with exit status 0 (successful).
+  INFO [7c31abe2] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [7c31abe2] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+  INFO [7c31abe2] Finished in 0.399 seconds with exit status 0 (successful).
+  INFO [6f00a01e] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config as deploy@18.183.210.148
+ DEBUG [6f00a01e] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config
+  INFO [6f00a01e] Finished in 0.357 seconds with exit status 0 (successful).
+ DEBUG [8e22e964] Running [ -f /deploy/apps/demo_server/shared/config/database.yml ] as deploy@18.183.210.148
+ DEBUG [8e22e964] Command: [ -f /deploy/apps/demo_server/shared/config/database.yml ]
+ DEBUG [8e22e964] Finished in 0.398 seconds with exit status 0 (successful).
+ DEBUG [111efd20] Running [ -f /deploy/apps/demo_server/shared/config/application.yml ] as deploy@18.183.210.148
+ DEBUG [111efd20] Command: [ -f /deploy/apps/demo_server/shared/config/application.yml ]
+ DEBUG [111efd20] Finished in 0.358 seconds with exit status 0 (successful).
+ DEBUG [553b4e11] Running [ -f /deploy/apps/demo_server/current/REVISION ] as deploy@18.183.210.148
+ DEBUG [553b4e11] Command: [ -f /deploy/apps/demo_server/current/REVISION ]
+ DEBUG [553b4e11] Finished in 0.857 seconds with exit status 1 (failed).
+ DEBUG [fffff4fe] Running [ -f /deploy/apps/demo_server/repo/HEAD ] as deploy@18.183.210.148
+ DEBUG [fffff4fe] Command: [ -f /deploy/apps/demo_server/repo/HEAD ]
+ DEBUG [fffff4fe] Finished in 0.356 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /deploy/apps/demo_server/repo
+ DEBUG [eac4200c] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [eac4200c] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [eac4200c] Finished in 0.401 seconds with exit status 0 (successful).
+  INFO [1a10d2cd] Running /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git as deploy@18.183.210.148
+ DEBUG [1a10d2cd] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e19aacadbc658fc23617.sh" ; /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git )
+  INFO [1a10d2cd] Finished in 0.360 seconds with exit status 0 (successful).
+  INFO [c2d3eeea] Running /usr/bin/env git remote update --prune as deploy@18.183.210.148
+ DEBUG [c2d3eeea] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e19aacadbc658fc23617.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [c2d3eeea] 	Fetching origin
+ DEBUG [c2d3eeea] 	
+  INFO [c2d3eeea] Finished in 3.217 seconds with exit status 0 (successful).
+ DEBUG [fdc36740] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [fdc36740] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [fdc36740] Finished in 0.474 seconds with exit status 0 (successful).
+  INFO [b7609369] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215065124 as deploy@18.183.210.148
+ DEBUG [b7609369] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e19aacadbc658fc23617.sh" ; /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215065124 )
+  INFO [b7609369] Finished in 0.404 seconds with exit status 0 (successful).
+  INFO [ba7461f9] Running /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215065124 as deploy@18.183.210.148
+ DEBUG [ba7461f9] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-e19aacadbc658fc23617.sh" ; /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215065124 )
+ DEBUG [ba7461f9] 	fatal: Not a valid object name
+ DEBUG [ba7461f9] 	
+ DEBUG [ba7461f9] 	tar: 
+ DEBUG [ba7461f9] 	This does not look like a tar archive
+ DEBUG [ba7461f9] 	
+ DEBUG [ba7461f9] 	tar: 
+ DEBUG [ba7461f9] 	Exiting with failure status due to previous errors
+ DEBUG [ba7461f9] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 13:53:23 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [c3d8cfc7] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [c3d8cfc7] Command: /usr/bin/env mkdir -p /tmp
+  INFO [c3d8cfc7] Finished in 2.031 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-99c889057bbb0a591c7f.sh 0.0%
+  INFO Uploading /tmp/git-ssh-99c889057bbb0a591c7f.sh 100.0%
+  INFO [b0420f48] Running /usr/bin/env chmod 700 /tmp/git-ssh-99c889057bbb0a591c7f.sh as deploy@18.183.210.148
+ DEBUG [b0420f48] Command: /usr/bin/env chmod 700 /tmp/git-ssh-99c889057bbb0a591c7f.sh
+  INFO [b0420f48] Finished in 0.361 seconds with exit status 0 (successful).
+  INFO [e9f8f00a] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [e9f8f00a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-99c889057bbb0a591c7f.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [e9f8f00a] 	f884dcc77426537b321ea8240d23b02deb149d5b
+ DEBUG [e9f8f00a] 		HEAD
+  INFO [e9f8f00a] Finished in 2.530 seconds with exit status 0 (successful).
+  INFO [297d483c] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [297d483c] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [297d483c] Finished in 0.359 seconds with exit status 0 (successful).
+  INFO [f7eb2809] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [f7eb2809] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+  INFO [f7eb2809] Finished in 0.361 seconds with exit status 0 (successful).
+  INFO [f122fba6] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config as deploy@18.183.210.148
+ DEBUG [f122fba6] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config
+  INFO [f122fba6] Finished in 0.404 seconds with exit status 0 (successful).
+ DEBUG [7eb50201] Running [ -f /deploy/apps/demo_server/shared/config/database.yml ] as deploy@18.183.210.148
+ DEBUG [7eb50201] Command: [ -f /deploy/apps/demo_server/shared/config/database.yml ]
+ DEBUG [7eb50201] Finished in 0.360 seconds with exit status 0 (successful).
+ DEBUG [571f638d] Running [ -f /deploy/apps/demo_server/shared/config/application.yml ] as deploy@18.183.210.148
+ DEBUG [571f638d] Command: [ -f /deploy/apps/demo_server/shared/config/application.yml ]
+ DEBUG [571f638d] Finished in 0.401 seconds with exit status 0 (successful).
+ DEBUG [247dd498] Running [ -f /deploy/apps/demo_server/current/REVISION ] as deploy@18.183.210.148
+ DEBUG [247dd498] Command: [ -f /deploy/apps/demo_server/current/REVISION ]
+ DEBUG [247dd498] Finished in 0.359 seconds with exit status 1 (failed).
+ DEBUG [015d4320] Running [ -f /deploy/apps/demo_server/repo/HEAD ] as deploy@18.183.210.148
+ DEBUG [015d4320] Command: [ -f /deploy/apps/demo_server/repo/HEAD ]
+ DEBUG [015d4320] Finished in 0.399 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /deploy/apps/demo_server/repo
+ DEBUG [6a4f3efb] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [6a4f3efb] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [6a4f3efb] Finished in 0.359 seconds with exit status 0 (successful).
+  INFO [317f0d4c] Running /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git as deploy@18.183.210.148
+ DEBUG [317f0d4c] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-99c889057bbb0a591c7f.sh" ; /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git )
+  INFO [317f0d4c] Finished in 0.404 seconds with exit status 0 (successful).
+  INFO [6037a892] Running /usr/bin/env git remote update --prune as deploy@18.183.210.148
+ DEBUG [6037a892] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-99c889057bbb0a591c7f.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [6037a892] 	Fetching origin
+ DEBUG [6037a892] 	
+  INFO [6037a892] Finished in 2.413 seconds with exit status 0 (successful).
+ DEBUG [a546da17] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [a546da17] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [a546da17] Finished in 0.356 seconds with exit status 0 (successful).
+  INFO [14212e84] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215065331 as deploy@18.183.210.148
+ DEBUG [14212e84] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-99c889057bbb0a591c7f.sh" ; /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215065331 )
+  INFO [14212e84] Finished in 0.402 seconds with exit status 0 (successful).
+  INFO [e0cb0dfc] Running /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215065331 as deploy@18.183.210.148
+ DEBUG [e0cb0dfc] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-99c889057bbb0a591c7f.sh" ; /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215065331 )
+ DEBUG [e0cb0dfc] 	fatal: Not a valid object name
+ DEBUG [e0cb0dfc] 	
+ DEBUG [e0cb0dfc] 	tar: 
+ DEBUG [e0cb0dfc] 	This does not look like a tar archive
+ DEBUG [e0cb0dfc] 	
+ DEBUG [e0cb0dfc] 	tar: 
+ DEBUG [e0cb0dfc] 	Exiting with failure status due to previous errors
+ DEBUG [e0cb0dfc] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 13:55:14 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [219c6675] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [219c6675] Command: /usr/bin/env mkdir -p /tmp
+  INFO [219c6675] Finished in 1.675 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-19cb9383074f8a181f73.sh 0.0%
+  INFO Uploading /tmp/git-ssh-19cb9383074f8a181f73.sh 100.0%
+  INFO [a8d74caf] Running /usr/bin/env chmod 700 /tmp/git-ssh-19cb9383074f8a181f73.sh as deploy@18.183.210.148
+ DEBUG [a8d74caf] Command: /usr/bin/env chmod 700 /tmp/git-ssh-19cb9383074f8a181f73.sh
+  INFO [a8d74caf] Finished in 0.282 seconds with exit status 0 (successful).
+  INFO [77c9ec2a] Running /usr/bin/env git ls-remote git@github-TN:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [77c9ec2a] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-19cb9383074f8a181f73.sh" ; /usr/bin/env git ls-remote git@github-TN:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [77c9ec2a] 	ssh: Could not resolve hostname github-tn: Temporary failure in name resolution
+ DEBUG [77c9ec2a] 	
+ DEBUG [77c9ec2a] 	fatal: Could not read from remote repository.
+ DEBUG [77c9ec2a] 	
+ DEBUG [77c9ec2a] 	
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 13:55:55 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [5529d722] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [5529d722] Command: /usr/bin/env mkdir -p /tmp
+  INFO [5529d722] Finished in 2.055 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-7b41b894d6db3ed446a0.sh 0.0%
+  INFO Uploading /tmp/git-ssh-7b41b894d6db3ed446a0.sh 100.0%
+  INFO [d6bde7bb] Running /usr/bin/env chmod 700 /tmp/git-ssh-7b41b894d6db3ed446a0.sh as deploy@18.183.210.148
+ DEBUG [d6bde7bb] Command: /usr/bin/env chmod 700 /tmp/git-ssh-7b41b894d6db3ed446a0.sh
+  INFO [d6bde7bb] Finished in 0.363 seconds with exit status 0 (successful).
+  INFO [3786f702] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [3786f702] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7b41b894d6db3ed446a0.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [3786f702] 	f884dcc77426537b321ea8240d23b02deb149d5b
+ DEBUG [3786f702] 		HEAD
+  INFO [3786f702] Finished in 2.500 seconds with exit status 0 (successful).
+  INFO [835a9cca] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [835a9cca] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [835a9cca] Finished in 0.363 seconds with exit status 0 (successful).
+  INFO [dc2b0d55] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [dc2b0d55] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+  INFO [dc2b0d55] Finished in 0.363 seconds with exit status 0 (successful).
+  INFO [4deb4d15] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config as deploy@18.183.210.148
+ DEBUG [4deb4d15] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config
+  INFO [4deb4d15] Finished in 0.405 seconds with exit status 0 (successful).
+ DEBUG [9b477aa2] Running [ -f /deploy/apps/demo_server/shared/config/database.yml ] as deploy@18.183.210.148
+ DEBUG [9b477aa2] Command: [ -f /deploy/apps/demo_server/shared/config/database.yml ]
+ DEBUG [9b477aa2] Finished in 0.362 seconds with exit status 0 (successful).
+ DEBUG [c7e27e82] Running [ -f /deploy/apps/demo_server/shared/config/application.yml ] as deploy@18.183.210.148
+ DEBUG [c7e27e82] Command: [ -f /deploy/apps/demo_server/shared/config/application.yml ]
+ DEBUG [c7e27e82] Finished in 0.409 seconds with exit status 0 (successful).
+ DEBUG [30c4b056] Running [ -f /deploy/apps/demo_server/current/REVISION ] as deploy@18.183.210.148
+ DEBUG [30c4b056] Command: [ -f /deploy/apps/demo_server/current/REVISION ]
+ DEBUG [30c4b056] Finished in 0.368 seconds with exit status 1 (failed).
+ DEBUG [659f2973] Running [ -f /deploy/apps/demo_server/repo/HEAD ] as deploy@18.183.210.148
+ DEBUG [659f2973] Command: [ -f /deploy/apps/demo_server/repo/HEAD ]
+ DEBUG [659f2973] Finished in 0.404 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /deploy/apps/demo_server/repo
+ DEBUG [646c11d5] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [646c11d5] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [646c11d5] Finished in 0.364 seconds with exit status 0 (successful).
+  INFO [f0de0b0e] Running /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git as deploy@18.183.210.148
+ DEBUG [f0de0b0e] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7b41b894d6db3ed446a0.sh" ; /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git )
+  INFO [f0de0b0e] Finished in 0.408 seconds with exit status 0 (successful).
+  INFO [afc5e4f5] Running /usr/bin/env git remote update --prune as deploy@18.183.210.148
+ DEBUG [afc5e4f5] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7b41b894d6db3ed446a0.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [afc5e4f5] 	Fetching origin
+ DEBUG [afc5e4f5] 	
+  INFO [afc5e4f5] Finished in 2.411 seconds with exit status 0 (successful).
+ DEBUG [c8ec0213] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [c8ec0213] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [c8ec0213] Finished in 0.357 seconds with exit status 0 (successful).
+  INFO [7f4610ee] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215065603 as deploy@18.183.210.148
+ DEBUG [7f4610ee] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7b41b894d6db3ed446a0.sh" ; /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215065603 )
+  INFO [7f4610ee] Finished in 0.418 seconds with exit status 0 (successful).
+  INFO [d8e5e235] Running /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215065603 as deploy@18.183.210.148
+ DEBUG [d8e5e235] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-7b41b894d6db3ed446a0.sh" ; /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215065603 )
+ DEBUG [d8e5e235] 	fatal: Not a valid object name
+ DEBUG [d8e5e235] 	
+ DEBUG [d8e5e235] 	tar: 
+ DEBUG [d8e5e235] 	This does not look like a tar archive
+ DEBUG [d8e5e235] 	
+ DEBUG [d8e5e235] 	tar: 
+ DEBUG [d8e5e235] 	Exiting with failure status due to previous errors
+ DEBUG [d8e5e235] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 13:56:36 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [ffcc06b5] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [ffcc06b5] Command: /usr/bin/env mkdir -p /tmp
+  INFO [ffcc06b5] Finished in 1.755 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-4d881d231869a2e78f9b.sh 0.0%
+  INFO Uploading /tmp/git-ssh-4d881d231869a2e78f9b.sh 100.0%
+  INFO [ad9ed9a9] Running /usr/bin/env chmod 700 /tmp/git-ssh-4d881d231869a2e78f9b.sh as deploy@18.183.210.148
+ DEBUG [ad9ed9a9] Command: /usr/bin/env chmod 700 /tmp/git-ssh-4d881d231869a2e78f9b.sh
+  INFO [ad9ed9a9] Finished in 0.295 seconds with exit status 0 (successful).
+  INFO [c464a248] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [c464a248] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4d881d231869a2e78f9b.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [c464a248] 	f884dcc77426537b321ea8240d23b02deb149d5b
+ DEBUG [c464a248] 		HEAD
+  INFO [c464a248] Finished in 2.559 seconds with exit status 0 (successful).
+  INFO [bf0e285f] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [bf0e285f] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [bf0e285f] Finished in 0.295 seconds with exit status 0 (successful).
+  INFO [a101d950] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [a101d950] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+  INFO [a101d950] Finished in 0.295 seconds with exit status 0 (successful).
+  INFO [c1069002] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config as deploy@18.183.210.148
+ DEBUG [c1069002] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config
+  INFO [c1069002] Finished in 0.337 seconds with exit status 0 (successful).
+ DEBUG [7eac02aa] Running [ -f /deploy/apps/demo_server/shared/config/database.yml ] as deploy@18.183.210.148
+ DEBUG [7eac02aa] Command: [ -f /deploy/apps/demo_server/shared/config/database.yml ]
+ DEBUG [7eac02aa] Finished in 0.296 seconds with exit status 0 (successful).
+ DEBUG [4fa8dbde] Running [ -f /deploy/apps/demo_server/shared/config/application.yml ] as deploy@18.183.210.148
+ DEBUG [4fa8dbde] Command: [ -f /deploy/apps/demo_server/shared/config/application.yml ]
+ DEBUG [4fa8dbde] Finished in 0.339 seconds with exit status 0 (successful).
+ DEBUG [f9456202] Running [ -f /deploy/apps/demo_server/current/REVISION ] as deploy@18.183.210.148
+ DEBUG [f9456202] Command: [ -f /deploy/apps/demo_server/current/REVISION ]
+ DEBUG [f9456202] Finished in 0.305 seconds with exit status 1 (failed).
+ DEBUG [c9ec79bf] Running [ -f /deploy/apps/demo_server/repo/HEAD ] as deploy@18.183.210.148
+ DEBUG [c9ec79bf] Command: [ -f /deploy/apps/demo_server/repo/HEAD ]
+ DEBUG [c9ec79bf] Finished in 0.344 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /deploy/apps/demo_server/repo
+ DEBUG [b0f6dd0e] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [b0f6dd0e] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [b0f6dd0e] Finished in 0.298 seconds with exit status 0 (successful).
+  INFO [3d69fa2f] Running /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git as deploy@18.183.210.148
+ DEBUG [3d69fa2f] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4d881d231869a2e78f9b.sh" ; /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git )
+  INFO [3d69fa2f] Finished in 0.343 seconds with exit status 0 (successful).
+  INFO [273469e2] Running /usr/bin/env git remote update --prune as deploy@18.183.210.148
+ DEBUG [273469e2] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4d881d231869a2e78f9b.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [273469e2] 	Fetching origin
+ DEBUG [273469e2] 	
+  INFO [273469e2] Finished in 2.255 seconds with exit status 0 (successful).
+ DEBUG [84ff6f8b] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [84ff6f8b] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [84ff6f8b] Finished in 0.291 seconds with exit status 0 (successful).
+  INFO [2e5a1c8c] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215065643 as deploy@18.183.210.148
+ DEBUG [2e5a1c8c] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4d881d231869a2e78f9b.sh" ; /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215065643 )
+  INFO [2e5a1c8c] Finished in 0.341 seconds with exit status 0 (successful).
+  INFO [0c365abe] Running /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215065643 as deploy@18.183.210.148
+ DEBUG [0c365abe] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-4d881d231869a2e78f9b.sh" ; /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215065643 )
+ DEBUG [0c365abe] 	fatal: Not a valid object name
+ DEBUG [0c365abe] 	
+ DEBUG [0c365abe] 	tar: 
+ DEBUG [0c365abe] 	This does not look like a tar archive
+ DEBUG [0c365abe] 	
+ DEBUG [0c365abe] 	tar: 
+ DEBUG [0c365abe] 	Exiting with failure status due to previous errors
+ DEBUG [0c365abe] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 13:58:41 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [893eb4fb] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [893eb4fb] Command: /usr/bin/env mkdir -p /tmp
+  INFO [893eb4fb] Finished in 1.687 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-0ab804a4b125b60c9557.sh 0.0%
+  INFO Uploading /tmp/git-ssh-0ab804a4b125b60c9557.sh 100.0%
+  INFO [0b1b5654] Running /usr/bin/env chmod 700 /tmp/git-ssh-0ab804a4b125b60c9557.sh as deploy@18.183.210.148
+ DEBUG [0b1b5654] Command: /usr/bin/env chmod 700 /tmp/git-ssh-0ab804a4b125b60c9557.sh
+  INFO [0b1b5654] Finished in 0.282 seconds with exit status 0 (successful).
+  INFO [14c04bd7] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [14c04bd7] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0ab804a4b125b60c9557.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [14c04bd7] 	f884dcc77426537b321ea8240d23b02deb149d5b
+ DEBUG [14c04bd7] 		HEAD
+  INFO [14c04bd7] Finished in 2.263 seconds with exit status 0 (successful).
+  INFO [ffb2711e] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [ffb2711e] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [ffb2711e] Finished in 0.280 seconds with exit status 0 (successful).
+  INFO [36a4d8c5] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [36a4d8c5] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+  INFO [36a4d8c5] Finished in 0.278 seconds with exit status 0 (successful).
+  INFO [2ebd3fbe] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config as deploy@18.183.210.148
+ DEBUG [2ebd3fbe] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config
+  INFO [2ebd3fbe] Finished in 0.333 seconds with exit status 0 (successful).
+ DEBUG [2c5cd0da] Running [ -f /deploy/apps/demo_server/shared/config/database.yml ] as deploy@18.183.210.148
+ DEBUG [2c5cd0da] Command: [ -f /deploy/apps/demo_server/shared/config/database.yml ]
+ DEBUG [2c5cd0da] Finished in 0.280 seconds with exit status 0 (successful).
+ DEBUG [2f02c5d6] Running [ -f /deploy/apps/demo_server/shared/config/application.yml ] as deploy@18.183.210.148
+ DEBUG [2f02c5d6] Command: [ -f /deploy/apps/demo_server/shared/config/application.yml ]
+ DEBUG [2f02c5d6] Finished in 0.324 seconds with exit status 0 (successful).
+ DEBUG [895521c8] Running [ -f /deploy/apps/demo_server/current/REVISION ] as deploy@18.183.210.148
+ DEBUG [895521c8] Command: [ -f /deploy/apps/demo_server/current/REVISION ]
+ DEBUG [895521c8] Finished in 0.280 seconds with exit status 1 (failed).
+ DEBUG [f93fbb7c] Running [ -f /deploy/apps/demo_server/repo/HEAD ] as deploy@18.183.210.148
+ DEBUG [f93fbb7c] Command: [ -f /deploy/apps/demo_server/repo/HEAD ]
+ DEBUG [f93fbb7c] Finished in 0.320 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /deploy/apps/demo_server/repo
+ DEBUG [48497821] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [48497821] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [48497821] Finished in 0.278 seconds with exit status 0 (successful).
+  INFO [5fff5eab] Running /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git as deploy@18.183.210.148
+ DEBUG [5fff5eab] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0ab804a4b125b60c9557.sh" ; /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git )
+  INFO [5fff5eab] Finished in 0.390 seconds with exit status 0 (successful).
+  INFO [cc531b96] Running /usr/bin/env git remote update --prune as deploy@18.183.210.148
+ DEBUG [cc531b96] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0ab804a4b125b60c9557.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [cc531b96] 	Fetching origin
+ DEBUG [cc531b96] 	
+  INFO [cc531b96] Finished in 2.226 seconds with exit status 0 (successful).
+ DEBUG [36ae131a] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [36ae131a] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [36ae131a] Finished in 0.277 seconds with exit status 0 (successful).
+  INFO [0d884bb7] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215065847 as deploy@18.183.210.148
+ DEBUG [0d884bb7] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0ab804a4b125b60c9557.sh" ; /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215065847 )
+  INFO [0d884bb7] Finished in 0.327 seconds with exit status 0 (successful).
+  INFO [890be321] Running /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215065847 as deploy@18.183.210.148
+ DEBUG [890be321] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-0ab804a4b125b60c9557.sh" ; /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215065847 )
+ DEBUG [890be321] 	fatal: Not a valid object name
+ DEBUG [890be321] 	
+ DEBUG [890be321] 	tar: 
+ DEBUG [890be321] 	This does not look like a tar archive
+ DEBUG [890be321] 	
+ DEBUG [890be321] 	tar: 
+ DEBUG [890be321] 	Exiting with failure status due to previous errors
+ DEBUG [890be321] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 14:01:46 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [470cce47] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [470cce47] Command: /usr/bin/env mkdir -p /tmp
+  INFO [470cce47] Finished in 1.788 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-a0778d47ace47d4efe7c.sh 0.0%
+  INFO Uploading /tmp/git-ssh-a0778d47ace47d4efe7c.sh 100.0%
+  INFO [0b546a47] Running /usr/bin/env chmod 700 /tmp/git-ssh-a0778d47ace47d4efe7c.sh as deploy@18.183.210.148
+ DEBUG [0b546a47] Command: /usr/bin/env chmod 700 /tmp/git-ssh-a0778d47ace47d4efe7c.sh
+  INFO [0b546a47] Finished in 0.306 seconds with exit status 0 (successful).
+  INFO [4e20e5bc] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [4e20e5bc] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a0778d47ace47d4efe7c.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [4e20e5bc] 	f884dcc77426537b321ea8240d23b02deb149d5b
+ DEBUG [4e20e5bc] 		HEAD
+  INFO [4e20e5bc] Finished in 2.424 seconds with exit status 0 (successful).
+  INFO [13bb1f7c] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [13bb1f7c] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [13bb1f7c] Finished in 0.304 seconds with exit status 0 (successful).
+  INFO [a8f8d610] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [a8f8d610] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+  INFO [a8f8d610] Finished in 0.300 seconds with exit status 0 (successful).
+  INFO [0efcb05d] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config as deploy@18.183.210.148
+ DEBUG [0efcb05d] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config
+  INFO [0efcb05d] Finished in 0.345 seconds with exit status 0 (successful).
+ DEBUG [d11c9fbb] Running [ -f /deploy/apps/demo_server/shared/config/database.yml ] as deploy@18.183.210.148
+ DEBUG [d11c9fbb] Command: [ -f /deploy/apps/demo_server/shared/config/database.yml ]
+ DEBUG [d11c9fbb] Finished in 0.312 seconds with exit status 0 (successful).
+ DEBUG [2f2d20fe] Running [ -f /deploy/apps/demo_server/shared/config/application.yml ] as deploy@18.183.210.148
+ DEBUG [2f2d20fe] Command: [ -f /deploy/apps/demo_server/shared/config/application.yml ]
+ DEBUG [2f2d20fe] Finished in 0.345 seconds with exit status 0 (successful).
+ DEBUG [b523542e] Running [ -f /deploy/apps/demo_server/current/REVISION ] as deploy@18.183.210.148
+ DEBUG [b523542e] Command: [ -f /deploy/apps/demo_server/current/REVISION ]
+ DEBUG [b523542e] Finished in 0.304 seconds with exit status 1 (failed).
+ DEBUG [7c7bf8ee] Running [ -f /deploy/apps/demo_server/repo/HEAD ] as deploy@18.183.210.148
+ DEBUG [7c7bf8ee] Command: [ -f /deploy/apps/demo_server/repo/HEAD ]
+ DEBUG [7c7bf8ee] Finished in 0.347 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /deploy/apps/demo_server/repo
+ DEBUG [e4428171] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [e4428171] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [e4428171] Finished in 0.302 seconds with exit status 0 (successful).
+  INFO [2cc4f84d] Running /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git as deploy@18.183.210.148
+ DEBUG [2cc4f84d] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a0778d47ace47d4efe7c.sh" ; /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git )
+  INFO [2cc4f84d] Finished in 0.371 seconds with exit status 0 (successful).
+  INFO [80c3e82b] Running /usr/bin/env git remote update --prune as deploy@18.183.210.148
+ DEBUG [80c3e82b] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a0778d47ace47d4efe7c.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [80c3e82b] 	Fetching origin
+ DEBUG [80c3e82b] 	
+  INFO [80c3e82b] Finished in 2.274 seconds with exit status 0 (successful).
+ DEBUG [4435e8b7] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [4435e8b7] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [4435e8b7] Finished in 0.299 seconds with exit status 0 (successful).
+  INFO [159abbc7] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215070154 as deploy@18.183.210.148
+ DEBUG [159abbc7] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a0778d47ace47d4efe7c.sh" ; /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215070154 )
+  INFO [159abbc7] Finished in 0.349 seconds with exit status 0 (successful).
+  INFO [bfd40297] Running /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215070154 as deploy@18.183.210.148
+ DEBUG [bfd40297] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-a0778d47ace47d4efe7c.sh" ; /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215070154 )
+ DEBUG [bfd40297] 	fatal: Not a valid object name
+ DEBUG [bfd40297] 	
+ DEBUG [bfd40297] 	tar: 
+ DEBUG [bfd40297] 	This does not look like a tar archive
+ DEBUG [bfd40297] 	
+ DEBUG [bfd40297] 	tar: 
+ DEBUG [bfd40297] 	Exiting with failure status due to previous errors
+ DEBUG [bfd40297] 	
+  INFO ---------------------------------------------------------------------------
+  INFO START 2023-02-15 14:07:37 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+  INFO [8139a05d] Running /usr/bin/env mkdir -p /tmp as deploy@18.183.210.148
+ DEBUG [8139a05d] Command: /usr/bin/env mkdir -p /tmp
+  INFO [8139a05d] Finished in 1.734 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-6eca5c4d2eff020a4676.sh 0.0%
+  INFO Uploading /tmp/git-ssh-6eca5c4d2eff020a4676.sh 100.0%
+  INFO [c9c6aa11] Running /usr/bin/env chmod 700 /tmp/git-ssh-6eca5c4d2eff020a4676.sh as deploy@18.183.210.148
+ DEBUG [c9c6aa11] Command: /usr/bin/env chmod 700 /tmp/git-ssh-6eca5c4d2eff020a4676.sh
+  INFO [c9c6aa11] Finished in 0.284 seconds with exit status 0 (successful).
+  INFO [b3a6a291] Running /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD as deploy@18.183.210.148
+ DEBUG [b3a6a291] Command: ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6eca5c4d2eff020a4676.sh" ; /usr/bin/env git ls-remote git@github.com:thaonguyen1995/Reactjs-App.git HEAD )
+ DEBUG [b3a6a291] 	f884dcc77426537b321ea8240d23b02deb149d5b
+ DEBUG [b3a6a291] 		HEAD
+  INFO [b3a6a291] Finished in 2.354 seconds with exit status 0 (successful).
+  INFO [0f425fae] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases as deploy@18.183.210.148
+ DEBUG [0f425fae] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared /deploy/apps/demo_server/releases
+  INFO [0f425fae] Finished in 0.283 seconds with exit status 0 (successful).
+  INFO [0025cad6] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads as deploy@18.183.210.148
+ DEBUG [0025cad6] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/log /deploy/apps/demo_server/shared/tmp/pids /deploy/apps/demo_server/shared/tmp/cache /deploy/apps/demo_server/shared/tmp/sockets /deploy/apps/demo_server/shared/vendor/bundle /deploy/apps/demo_server/shared/public/system /deploy/apps/demo_server/shared/public/uploads
+  INFO [0025cad6] Finished in 0.281 seconds with exit status 0 (successful).
+  INFO [a0aedc9d] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config as deploy@18.183.210.148
+ DEBUG [a0aedc9d] Command: /usr/bin/env mkdir -p /deploy/apps/demo_server/shared/config
+  INFO [a0aedc9d] Finished in 0.323 seconds with exit status 0 (successful).
+ DEBUG [4b4d73a5] Running [ -f /deploy/apps/demo_server/shared/config/database.yml ] as deploy@18.183.210.148
+ DEBUG [4b4d73a5] Command: [ -f /deploy/apps/demo_server/shared/config/database.yml ]
+ DEBUG [4b4d73a5] Finished in 0.282 seconds with exit status 0 (successful).
+ DEBUG [a4264025] Running [ -f /deploy/apps/demo_server/shared/config/application.yml ] as deploy@18.183.210.148
+ DEBUG [a4264025] Command: [ -f /deploy/apps/demo_server/shared/config/application.yml ]
+ DEBUG [a4264025] Finished in 0.328 seconds with exit status 0 (successful).
+ DEBUG [bffd70a0] Running [ -f /deploy/apps/demo_server/current/REVISION ] as deploy@18.183.210.148
+ DEBUG [bffd70a0] Command: [ -f /deploy/apps/demo_server/current/REVISION ]
+ DEBUG [bffd70a0] Finished in 0.280 seconds with exit status 1 (failed).
+ DEBUG [bc436f28] Running [ -f /deploy/apps/demo_server/repo/HEAD ] as deploy@18.183.210.148
+ DEBUG [bc436f28] Command: [ -f /deploy/apps/demo_server/repo/HEAD ]
+ DEBUG [bc436f28] Finished in 0.324 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /deploy/apps/demo_server/repo
+ DEBUG [32ccaee6] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [32ccaee6] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [32ccaee6] Finished in 0.279 seconds with exit status 0 (successful).
+  INFO [009dadfc] Running /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git as deploy@18.183.210.148
+ DEBUG [009dadfc] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6eca5c4d2eff020a4676.sh" ; /usr/bin/env git remote set-url origin git@github.com:thaonguyen1995/Reactjs-App.git )
+  INFO [009dadfc] Finished in 0.328 seconds with exit status 0 (successful).
+  INFO [9f2e6aba] Running /usr/bin/env git remote update --prune as deploy@18.183.210.148
+ DEBUG [9f2e6aba] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6eca5c4d2eff020a4676.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [9f2e6aba] 	Fetching origin
+ DEBUG [9f2e6aba] 	
+  INFO [9f2e6aba] Finished in 2.254 seconds with exit status 0 (successful).
+ DEBUG [8247e3cf] Running if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi as deploy@18.183.210.148
+ DEBUG [8247e3cf] Command: if test ! -d /deploy/apps/demo_server/repo; then echo "Directory does not exist '/deploy/apps/demo_server/repo'" 1>&2; false; fi
+ DEBUG [8247e3cf] Finished in 0.278 seconds with exit status 0 (successful).
+  INFO [c567ad25] Running /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215070744 as deploy@18.183.210.148
+ DEBUG [c567ad25] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6eca5c4d2eff020a4676.sh" ; /usr/bin/env mkdir -p /deploy/apps/demo_server/releases/20230215070744 )
+  INFO [c567ad25] Finished in 0.326 seconds with exit status 0 (successful).
+  INFO [f5b84787] Running /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215070744 as deploy@18.183.210.148
+ DEBUG [f5b84787] Command: cd /deploy/apps/demo_server/repo && ( export GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-6eca5c4d2eff020a4676.sh" ; /usr/bin/env git archive config_deploy | /usr/bin/env tar -x -f - -C /deploy/apps/demo_server/releases/20230215070744 )
+ DEBUG [f5b84787] 	fatal: Not a valid object name
+ DEBUG [f5b84787] 	
+ DEBUG [f5b84787] 	tar: 
+ DEBUG [f5b84787] 	This does not look like a tar archive
+ DEBUG [f5b84787] 	
+ DEBUG [f5b84787] 	tar: 
+ DEBUG [f5b84787] 	Exiting with failure status due to previous errors
+ DEBUG [f5b84787] 	

@@ -1,4 +1,13 @@
 node_modules
 tmp/*
-public
 .env
+
+public/*
+coverage/
+.rspec
+
+config/settings.local.yml
+
+config/settings.local.yml
+config/settings/*.local.yml
+config/environments/*.local.yml

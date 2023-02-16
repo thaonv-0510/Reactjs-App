@@ -1,10 +1,10 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.1'
+ruby '3.2.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
-gem 'rails', '~> 6.0.5', '>= 6.0.4.1'
+gem 'rails', '~> 6.0.6', '>= 6.0.4.1'
 # Use sqlite3 as the database for Active Record
 gem 'mysql2', '~> 0.5'
 # Use Puma as the app server
@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.7'
 # gem 'bcrypt', '~> 3.1.7'
 gem 'devise'
 gem 'i18n-js'
+gem 'rack-cors'
+gem 'psych', '< 4.0.0'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

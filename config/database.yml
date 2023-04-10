@@ -2,12 +2,13 @@
 #   gem install sqlite3
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
-#   gem 'sqlite3'
+#   gem "sqlite3"
 #
 default: &default
-  adapter: postgresql
+  adapter: mysql2
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  encoding: unicode
+  host: <%= ENV["DB_HOST"] %>
+  port: <%= ENV["DB_PORT"] || 3306 %>
   username: <%= ENV["DB_USERNAME"] %>
   password: <%= ENV["DB_PASSWORD"] %>
   timeout: 5000

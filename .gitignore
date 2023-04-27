@@ -37,3 +37,4 @@ public/packs
 ./docker/nginx/logs/*
 # Ignore application configuration
 /config/application.yml
+/coverage

@@ -26,7 +26,6 @@ const Error = () => (
 document.addEventListener('DOMContentLoaded', () => {
   const appRoot = createRoot(document.getElementById('root'));
   appRoot.render(
-    <App/>,
-    document.getElementById('root'),
+    <App/>
   )
 })

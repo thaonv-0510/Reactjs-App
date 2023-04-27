@@ -1,0 +1,41 @@
+version: 2.1
+
+ruby_image: &ruby_image circleci/ruby:2.7.1
+
+executors:
+  ruby:
+    docker:
+      - image: *ruby_image
+  rails:
+    docker:
+      - image: *ruby_image
+        environment:
+          RAILS_ENV: test
+          DB_HOST: 127.0.0.1
+          DB_USERNAME: root
+          DB_PASSWORD: "123456"
+      - image: mysql:5.7
+        environment:
+          MYSQL_ROOT_HOST: "%"
+          MYSQL_ROOT_PASSWORD: "123456"
+  node:
+    docker:
+      - image: node:16.10.0
+jobs:
+  build:
+    executor:
+      name: rails
+    working_directory: ~/Libra
+    steps:
+      - checkout
+      - ruby/install-deps
+      - run:
+          name: set up db
+          command: bundle exec rails db:create db:migrate --trace
+  run_backend_test:
+    executor:
+      name: rails
+    steps:
+      - run:
+          name: run rspec
+          command: bundle exec rspec --fail-fast -- $(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)

@@ -1,5 +1,17 @@
 {
   "compilerOptions": {
+    "baseUrl": "./app",
+    "paths": {
+      "@src/*": [
+        "./javascript/src/*"
+      ],
+      "@tests/*": [
+        "./javascript/tests/*"
+      ],
+      "*": [
+        "*"
+      ]
+    },
     "declaration": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
@@ -18,5 +30,5 @@
     "vendor",
     "public"
   ],
-  "compileOnSave": false
+  "compileOnSave": true
 }

@@ -2,6 +2,17 @@ version: 2.1
 
 ruby_image: &ruby_image circleci/ruby:2.7.1
 
+parameters:
+  yarn_cache_path:
+    type: string
+    default: "~/.cache/yarn"
+  node_modules_cache_path:
+    type: string
+    default: "~/libra/node_modules"
+  ruby_version:
+    type: string
+    default: "2.7.1"
+
 executors:
   ruby:
     docker:
@@ -30,6 +41,8 @@ jobs:
     steps:
       - checkout
       - run:
+          command: bundle install
+      - run:
           name: set up db
           command: bundle exec rails db:create db:migrate --trace
   backend-rspec-job:
@@ -49,19 +62,19 @@ jobs:
       - restore_cache:
           keys:
             - libra-yarn-v1.22.19-{{ checksum "yarn.lock" }}
+      - save_cache:
+          key: libra-yarn-v1.22.19-{{ checksum "yarn.lock" }}
+          paths:
+            - << pipeline.parameters.yarn_cache_path >>
+      - save_cache:
+          key: libra-node_modules-{{ checksum "yarn.lock" }}
+          paths:
+            - << pipeline.parameters.node_modules_cache_path >>
       - run:
           command: |
             yarn install \
               --frozen-lockfile \
               --cache-folder << pipeline.parameters.yarn_cache_path >>
-      - save-cache:
-          key: libra-yarn-v1.22.19-{{ checksum "yarn.lock" }}
-          paths:
-            - << pipeline.parameters.yarn_cache_path >>
-      - save-cache:
-          key: libra-node_modules-{{ checksum "yarn.lock" }}
-          paths:
-            - << pipeline.parameters.node_modules_cache_path >>
   front-test-job:
     executor: node
     working_directory: ~/Libra
@@ -79,12 +92,16 @@ workflows:
   backend-rspec:
     jobs:
       - backend-build:
+          context:
+            - dev
       - backend-rspec-job:
           requires:
             - backend-build
   frontend-unit-test:
     jobs:
       - frontend-build:
+          context:
+            - dev
       - front-test-job:
           requires:
             - frontend-build

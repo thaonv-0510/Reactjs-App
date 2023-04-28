@@ -21,21 +21,70 @@ executors:
   node:
     docker:
       - image: node:16.10.0
+
 jobs:
-  build:
+  backend-build:
     executor:
       name: rails
     working_directory: ~/Libra
     steps:
       - checkout
-      - ruby/install-deps
       - run:
           name: set up db
           command: bundle exec rails db:create db:migrate --trace
-  run_backend_test:
+  backend-rspec-job:
     executor:
       name: rails
     steps:
       - run:
           name: run rspec
           command: bundle exec rspec --fail-fast -- $(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)
+  frontend-build:
+    executor: node
+    working_directory: ~/Libra
+    steps:
+      - restore_cache:
+          keys:
+            - libra-node_modules-{{ checksum "yarn.lock" }}
+      - restore_cache:
+          keys:
+            - libra-yarn-v1.22.19-{{ checksum "yarn.lock" }}
+      - run:
+          command: |
+            yarn install \
+              --frozen-lockfile \
+              --cache-folder << pipeline.parameters.yarn_cache_path >>
+      - save-cache:
+          key: libra-yarn-v1.22.19-{{ checksum "yarn.lock" }}
+          paths:
+            - << pipeline.parameters.yarn_cache_path >>
+      - save-cache:
+          key: libra-node_modules-{{ checksum "yarn.lock" }}
+          paths:
+            - << pipeline.parameters.node_modules_cache_path >>
+  front-test-job:
+    executor: node
+    working_directory: ~/Libra
+    steps:
+      - restore_cache:
+          keys:
+            - libra-node_modules-{{ checksum "yarn.lock" }}
+      - restore_cache:
+          keys:
+            - libra-yarn-v1.22.19-{{ checksum "yarn.lock" }}
+      - run:
+          command: jest ./tests/ --ci --runInBand --reporters=default --reporters=jest-junit
+
+workflows:
+  backend-rspec:
+    jobs:
+      - backend-build:
+      - backend-rspec-job:
+          requires:
+            - backend-build
+  frontend-unit-test:
+    jobs:
+      - frontend-build:
+      - front-test-job:
+          requires:
+            - frontend-build

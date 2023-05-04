@@ -17,17 +17,21 @@ gem "bootsnap", require: false
 gem 'devise'
 
 group :development, :test do
+  gem 'rspec-rails', '~> 6.0.0'
+  gem "database_cleaner"
+  gem "shoulda-matchers"
+  gem "simplecov", require: false
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
+end
+
+group :development do
+  gem "web-console"
   gem "capistrano", "~> 3.17", require: false
   gem "capistrano3-puma"
   gem "capistrano-rails", require: false
   gem "capistrano-bundler", require: false
   gem "capistrano-figaro-yml"
   gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
-end
-
-group :development do
-  gem "web-console"
 end
 
 group :test do

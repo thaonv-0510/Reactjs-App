@@ -46,6 +46,7 @@ const Input: React.FC<Props & React.HTMLProps<HTMLInputElement>> = ({
       <input
       key="input"
       type='text'
+      data-testid="atom-input"
       {...props}/>
       {hasError && errorMessage && (
         <TextError>{errorMessage}</TextError>

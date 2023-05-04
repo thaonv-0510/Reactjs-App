@@ -1,6 +1,6 @@
 version: 2.1
 
-ruby_image: &ruby_image circleci/ruby:2.7.1
+ruby_image: &ruby_image cimg/ruby:3.1.2
 
 parameters:
   yarn_cache_path:
@@ -8,10 +8,10 @@ parameters:
     default: "~/.cache/yarn"
   node_modules_cache_path:
     type: string
-    default: "~/libra/node_modules"
+    default: "~/Libra/node_modules"
   ruby_version:
     type: string
-    default: "2.7.1"
+    default: "3.1.2"
 
 executors:
   ruby:
@@ -21,6 +21,7 @@ executors:
     docker:
       - image: *ruby_image
         environment:
+          BUNDLE_PATH: /vendor/bundle
           RAILS_ENV: test
           DB_HOST: 127.0.0.1
           DB_USERNAME: root
@@ -31,7 +32,7 @@ executors:
           MYSQL_ROOT_PASSWORD: "123456"
   node:
     docker:
-      - image: node:16.10.0
+      - image: node:16.17.1
 
 jobs:
   backend-build:
@@ -40,8 +41,15 @@ jobs:
     working_directory: ~/Libra
     steps:
       - checkout
-      - run:
-          command: bundle install
+      - restore_cache:
+          keys:
+            - libra-rails-bundle-{{ checksum ".ruby-version" }}-{{ checksum "Gemfile.lock" }}
+            - libra-rails-bundle-{{ checksum ".ruby-version" }}
+      - run: bundle install
+      - save_cache:
+          key: libra-rails-bundle-{{ checksum ".ruby-version" }}-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
       - run:
           name: set up db
           command: bundle exec rails db:create db:migrate --trace
@@ -49,6 +57,8 @@ jobs:
     executor:
       name: rails
     steps:
+      - checkout
+      - run: bundle --path vendor/bundle
       - run:
           name: run rspec
           command: bundle exec rspec --fail-fast -- $(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)
@@ -56,52 +66,50 @@ jobs:
     executor: node
     working_directory: ~/Libra
     steps:
+      - checkout
       - restore_cache:
           keys:
-            - libra-node_modules-{{ checksum "yarn.lock" }}
+            - libra-cache-node-modules-{{ checksum "yarn.lock" }}
       - restore_cache:
           keys:
-            - libra-yarn-v1.22.19-{{ checksum "yarn.lock" }}
-      - save_cache:
-          key: libra-yarn-v1.22.19-{{ checksum "yarn.lock" }}
-          paths:
-            - << pipeline.parameters.yarn_cache_path >>
-      - save_cache:
-          key: libra-node_modules-{{ checksum "yarn.lock" }}
-          paths:
-            - << pipeline.parameters.node_modules_cache_path >>
+            - libra-cache-yarn-v1.22.5-{{ checksum "yarn.lock" }}
       - run:
           command: |
             yarn install \
               --frozen-lockfile \
               --cache-folder << pipeline.parameters.yarn_cache_path >>
+      - save_cache:
+          key: libra-cache-yarn-v1.22.5-{{ checksum "yarn.lock" }}
+          paths:
+            - << pipeline.parameters.yarn_cache_path >>
+      - save_cache:
+          key: libra-cache-node-modules-{{ checksum "yarn.lock" }}
+          paths:
+            - << pipeline.parameters.node_modules_cache_path >>
   front-test-job:
     executor: node
     working_directory: ~/Libra
     steps:
+      - checkout
       - restore_cache:
           keys:
-            - libra-node_modules-{{ checksum "yarn.lock" }}
+            - libra-cache-node-modules-{{ checksum "yarn.lock" }}
       - restore_cache:
           keys:
-            - libra-yarn-v1.22.19-{{ checksum "yarn.lock" }}
+            - libra-cache-yarn-v1.22.5-{{ checksum "yarn.lock" }}
       - run:
-          command: jest ./tests/ --ci --runInBand --reporters=default --reporters=jest-junit
+          command: yarn ciTest
 
 workflows:
   backend-rspec:
     jobs:
-      - backend-build:
-          context:
-            - dev
+      - backend-build
       - backend-rspec-job:
           requires:
             - backend-build
   frontend-unit-test:
     jobs:
-      - frontend-build:
-          context:
-            - dev
+      - frontend-build
       - front-test-job:
           requires:
             - frontend-build

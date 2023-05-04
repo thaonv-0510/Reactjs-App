@@ -2,8 +2,8 @@
   "name": "app",
   "private": "true",
   "engines": {
-    "node": "^16.10.0",
-    "yarn": "^1.22.19"
+    "node": "^16.17.1",
+    "yarn": "^1.22.5"
   },
   "dependencies": {
     "@babel/core": "^7.19.6",
@@ -27,7 +27,8 @@
   },
   "scripts": {
     "build": "webpack --config webpack.config.js",
-    "test": "jest"
+    "test": "jest",
+    "ciTest": "NODE_ENV=test ./node_modules/.bin/jest ./app/javascript/tests --ci --runInBand --reporters=default"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",

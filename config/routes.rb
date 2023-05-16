@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get '/*other', to: "homepage#index"
   get 'homepage/index'
   root to: 'homepage#index'
   devise_for :users, controllers: {

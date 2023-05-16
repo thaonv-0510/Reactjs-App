@@ -1,6 +1,7 @@
 class HomepageController < ApplicationController
-  before_action :authenticate_user!
-
   def index
+    respond_to do |format|
+      format.html { render 'layouts/application' }
+    end
   end
 end

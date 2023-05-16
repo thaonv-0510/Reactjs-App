@@ -3,77 +3,17 @@
 // of the page.
 
 import React from 'react';
-import styled from "styled-components";
 import Input from '../../atoms/Input';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import {
+  Container,
+  WrapForm,
+  ButtonLogin,
+  ButtonFaceBookLogin,
+  LabelInput,
+} from './FormLogin.style';
 
-const Container = styled.div`
-  width: 100%;
-  vertical-align: middle;
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  color: #091F6C;
-  min-height: 100vh;
-  -webkit-align-items: center;
-  justify-content: center;
-
-  #login-form {
-    padding: 3rem;
-    min-width: 450px;
-    margin: 0 0 0 48px;
-    max-height: 800px;
-    max-width: 500px;
-    box-shadow: 0 1px 20px rgb(0 0 0 / 20%);
-    border-radius: 10px;
-    box-sizing: border-box;
-  }
-
-  h2 {
-    color: #1739a5;
-  }
-
-  label {
-    display: block;
-    color: #091F6C;
-    font-size: 0.75rem;
-    font-weight: bold;
-    margin: 30px 0 10px 0
-  }
-`
-const ButtonLogin = styled.button`
-  height: 50px;
-  background: rgb(15 153 103);
-  border: none;
-  border-radius: 10px;
-  color: #fff;
-  width: 100%;
-  margin: 20px 0px;
-  transition: all 0.3s ease-in-out;
-
-  :hover {
-    cursor: pointer;
-    background: rgb(7 120 84);
-    box-shadow: 0 1px 20px rgb(0 0 0 / 20%);
-  }
-`
-
-const ButtonFaceBookLogin = styled.button`
-  height: 40px;
-  background: rgb(23 119 242);
-  border: none;
-  border-radius: 10px;
-  color: #fff;
-  width: 100%;
-  margin-bottom: 10px;
-  transition: all 0.3s ease-in-out;
-
-  :hover {
-    cursor: pointer;
-    background: rgb(42 89 149);
-    box-shadow: 0 1px 20px rgb(0 0 0 / 20%);
-  }
-`
 const FormLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -101,28 +41,29 @@ const FormLogin = () => {
           }
         })
     }).then((res) => res.json())
-      .then(({status, msg}) => {
+      .then(({status, msg, token}) => {
         setError(status !== 200);
         setMsg(msg);
+        window.localStorage.setItem('access_token', token);
         if(status == 200) navigate("/");
       })
   }
 
   return (
     <Container>
-      <div id='login-form'>
+      <WrapForm>
         <h2>
           Login to App
         </h2>
         <form onSubmit={handleLogin}>
-          <label htmlFor="email">Email address</label>
+          <LabelInput htmlFor="email">Email address</LabelInput>
           <Input
             type="text"
             hasError={hasError}
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setEmail(e.target.value)}
             placeholder="example@gmail.com">
           </Input>
-          <label htmlFor="password">Password</label>
+          <LabelInput htmlFor="password">Password</LabelInput>
           <Input
             type="password"
             hasError={hasError}
@@ -148,7 +89,7 @@ const FormLogin = () => {
             <a href="https://www.google.com/">Forgot password</a>
           </div>
         </div>
-      </div>
+      </WrapForm>
     </Container>
   )
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
-import HomePage from '@src/components/pages/home_page/HomePage'
-import FormLogin from '@src/components/pages/sessions/FormLogin'
+import HomePage from '@src/components/pages/homePage/HomePage'
+import FormLogin from '@src/components/organisms/FormLogin';
 
 const Error = () => (
   <div>
@@ -17,6 +17,7 @@ const AppRoutes = () => (
       <Route path='/:something' element={<Error/>}></Route>
       <Route path='/' element={<HomePage/>}/>
       <Route path='/users/sign_in' element={<FormLogin />}/>
+      <Route path='/account/login' element={<Error />}/>
     </Routes>
   </BrowserRouter>
 )

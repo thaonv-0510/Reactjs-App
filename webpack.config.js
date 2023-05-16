@@ -11,7 +11,7 @@ module.exports = {
     moduleIds: 'hashed',
   },
   entry: {
-    application: "./app/javascript/src/components/pages/App.tsx"
+    application: "./app/javascript/src/App.tsx"
   },
   output: {
     filename: "[name].js",

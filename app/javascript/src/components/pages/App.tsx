@@ -10,6 +10,7 @@ const App = () => (
       <Route path='/:something' element={<Error/>}></Route>
       <Route path='/' element={<HomePage/>}/>
       <Route path='/users/sign_in' element={<FormLogin />}/>
+      <Route path='/account/login' element={<Error />}/>
     </Routes>
   </BrowserRouter>
 )

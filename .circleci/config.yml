@@ -17,18 +17,19 @@ executors:
   ruby:
     docker:
       - image: *ruby_image
+        environment:
+          BUNDLE_PATH: vendor/bundle
   rails:
     docker:
       - image: *ruby_image
         environment:
-          BUNDLE_PATH: /vendor/bundle
+          BUNDLE_PATH: vendor/bundle
           RAILS_ENV: test
           DB_HOST: 127.0.0.1
           DB_USERNAME: root
           DB_PASSWORD: "123456"
       - image: mysql:5.7
         environment:
-          MYSQL_ROOT_HOST: "%"
           MYSQL_ROOT_PASSWORD: "123456"
   node:
     docker:
@@ -37,28 +38,30 @@ executors:
 jobs:
   backend-build:
     executor:
+      name: ruby
+    working_directory: ~/Libra
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+            - libra-rails-bundle3-{{ checksum "Gemfile.lock" }}
+      - run: bundle install
+      - save_cache:
+          key: libra-rails-bundle3-{{ checksum "Gemfile.lock" }}
+          paths:
+            - vendor/bundle
+  backend-rspec-job:
+    executor:
       name: rails
     working_directory: ~/Libra
     steps:
       - checkout
       - restore_cache:
           keys:
-            - libra-rails-bundle-{{ checksum ".ruby-version" }}-{{ checksum "Gemfile.lock" }}
-            - libra-rails-bundle-{{ checksum ".ruby-version" }}
-      - run: bundle install
-      - save_cache:
-          key: libra-rails-bundle-{{ checksum ".ruby-version" }}-{{ checksum "Gemfile.lock" }}
-          paths:
-            - vendor/bundle
+            - libra-rails-bundle3-{{ checksum "Gemfile.lock" }}
       - run:
           name: set up db
           command: bundle exec rails db:create db:migrate --trace
-  backend-rspec-job:
-    executor:
-      name: rails
-    steps:
-      - checkout
-      - run: bundle --path vendor/bundle
       - run:
           name: run rspec
           command: bundle exec rspec --fail-fast -- $(circleci tests glob "spec/**/*_spec.rb" | circleci tests split --split-by=timings)

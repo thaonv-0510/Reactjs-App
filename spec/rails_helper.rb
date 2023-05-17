@@ -16,7 +16,7 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   config.fixture_path = "#{::Rails.root}/spec/fixtures"
   config.use_transactional_fixtures = true
-  config.use_active_record = true
+  # config.use_active_record = true
   config.infer_spec_type_from_file_location!
   config.filter_rails_from_backtrace!
   # add below config if test for controller

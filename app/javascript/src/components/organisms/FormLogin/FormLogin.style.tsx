@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from '@src/colors';
 
 export const WrapForm = styled.div`
   padding: 3rem;
@@ -16,13 +17,13 @@ export const Container = styled.div`
   vertical-align: middle;
   font-family: Arial, Helvetica, sans-serif;
   display: flex;
-  color: #091F6C;
+  color: ${colors.ivoryWhite};
   min-height: 100vh;
   -webkit-align-items: center;
   justify-content: center;
 
   h2 {
-    color: #1739a5;
+    color: ${colors.navy};
   }
 `;
 
@@ -31,7 +32,7 @@ export const ButtonLogin = styled.button`
   background: rgb(15 153 103);
   border: none;
   border-radius: 10px;
-  color: #fff;
+  color: ${colors.white};
   width: 100%;
   margin: 20px 0px;
   transition: all 0.3s ease-in-out;

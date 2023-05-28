@@ -1,6 +1,9 @@
 class SessionsController < Devise::SessionsController
   def create
     @user ||= User.find_by email: params[:user][:email]
+
+    return render json: { ok: false, msg: 'Not found' }, status: 404 unless @user
+
     if @user&.valid_password? params[:user][:password]
       sign_in @user
       session[:user_id] = @user.id

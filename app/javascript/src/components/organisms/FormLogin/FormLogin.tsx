@@ -3,7 +3,7 @@
 // of the page.
 
 import React from 'react';
-import Input from '../../atoms/Input';
+import Input from '../../atoms/Input/Input';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import {
@@ -17,7 +17,6 @@ import {
 const FormLogin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [msg, setMsg] = useState('');
   const [hasError, setError] = useState(false);
   const navigate = useNavigate();
 
@@ -43,7 +42,6 @@ const FormLogin = () => {
     }).then((res) => res.json())
       .then(({status, msg, token}) => {
         setError(status !== 200);
-        setMsg(msg);
         window.localStorage.setItem('access_token', token);
         if(status == 200) navigate("/");
       })

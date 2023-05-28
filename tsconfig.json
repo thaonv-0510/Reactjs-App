@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": "./app",
+    "outDir": "./app/assets/builds",
     "paths": {
       "@src/*": [
         "./javascript/src/*"
@@ -30,5 +31,5 @@
     "vendor",
     "public"
   ],
-  "compileOnSave": true
+  "compileOnSave": false
 }

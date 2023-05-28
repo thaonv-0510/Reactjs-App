@@ -44,13 +44,14 @@ const Input: React.FC<Props & React.HTMLProps<HTMLInputElement>> = ({
   return(
     <BorderInput key="border-input" hasError={hasError}>
       <input
-      key="input"
-      type='text'
-      data-testid="atom-input"
-      {...props}/>
-      {hasError && errorMessage && (
-        <TextError>{errorMessage}</TextError>
-      )}
+        key="input"
+        type='text'
+        data-testid="atom-input"
+        {...props}
+      />
+        {hasError && errorMessage && (
+          <TextError>{errorMessage}</TextError>
+        )}
     </BorderInput>
   )
 }

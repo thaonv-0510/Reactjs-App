@@ -12,7 +12,7 @@ module.exports = {
     "html",
   ],
   testMatch: [
-    "**/tests/**/*.[jt]s?(x)",
+    "**/tests/**/*.test.[jt]s?(x)",
     "**/?(*.)+(spec|test).[tj]s?(x)"
   ],
   testPathIgnorePatterns: [
@@ -20,7 +20,7 @@ module.exports = {
   ],
   testEnvironment: "jsdom",
   moduleNameMapper: {
-    "@src/.*": "<rootDir>/app/javascript/src/$1",
-    "@tests/.*": "<rootDir>/app/javascript/tests/$1",
+    "@src/(.*)": "<rootDir>/app/javascript/src/$1",
+    "@tests/(.*)": "<rootDir>/app/javascript/tests/$1",
   }
 };

@@ -19,6 +19,7 @@ gem 'jwt'
 gem 'active_model_serializers', '~> 0.10.2'
 
 group :development, :test do
+  gem 'pry', '~> 0.13.1'
   gem 'faker'
   gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 6.0.0'

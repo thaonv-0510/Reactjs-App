@@ -12,48 +12,51 @@ import {
   ButtonLogin,
   ButtonFaceBookLogin,
   LabelInput,
-} from './FormLogin.style';
+  LoadingSpan,
+} from './LoginForm.style';
+import axios from 'axios';
+import { accessTokenAtom } from '@src/states/sessions';
+import { useSetRecoilState } from 'recoil';
 
-const FormLogin = () => {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [hasError, setError] = useState(false);
+const LoginForm: React.FC = () => {
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
+  const [hasError, setError] = useState<boolean>(false);
+  const [loading, setLoading] = useState<boolean>(false);
+  const setAccessToken = useSetRecoilState(accessTokenAtom);
   const navigate = useNavigate();
 
   async function handleLogin(event) {
     event.preventDefault();
+    setLoading(true);
 
-    const csrf = document.querySelector("meta[name='csrf-token']").getAttribute("content");
-    await fetch('/users/sign_in', {
-      method: 'POST',
-      credentials: 'same-origin',
-      headers: {
-        'Content-Type': 'application/json',
-        'X-CSRF-Token': csrf,
-        'X-Requested-With': 'XMLHttpRequest'
-      },
-      body: JSON.stringify(
-        {
-          user: {
-            email: email,
-            password: password
-          }
-        })
-    }).then((res) => res.json())
-      .then(({status, msg, token}) => {
-        setError(status !== 200);
-        window.localStorage.setItem('access_token', token);
-        if(status == 200) navigate("/");
-      })
+    const csrf = document.querySelector("meta[name='csrf-token']")?.getAttribute("content");
+
+    axios.defaults.headers.post['X-CSRF-Token'] = csrf;
+    await axios.post('/users/sign_in', {
+      user: {
+        email: email,
+        password: password
+      }
+    }).then((res) => {
+      const {status, data} = res;
+      setAccessToken(data.token);
+
+      if(status == 200) navigate("/");
+    }).catch((err) => {
+      setError(true);
+    }).finally(() => {
+      setLoading(false);
+    })
   }
 
   return (
     <Container>
       <WrapForm>
         <h2>
-          Login to App
+          Login
         </h2>
-        <form onSubmit={handleLogin}>
+        <form>
           <LabelInput htmlFor="email">Email address</LabelInput>
           <Input
             type="text"
@@ -68,17 +71,17 @@ const FormLogin = () => {
             onChange={(e: React.ChangeEvent<HTMLInputElement>) => setPassword(e.target.value)}
             placeholder="Password">
           </Input>
-          <div className='form-action'>
-            <ButtonLogin>
-              Login
-            </ButtonLogin>
-          </div>
+          <ButtonLogin onClick={handleLogin}>
+            {
+              loading ? (
+                <LoadingSpan />
+              ) : 'Login'
+            }
+          </ButtonLogin>
         </form>
-        <form>
-          <ButtonFaceBookLogin>
-            Login by FaceBook
-          </ButtonFaceBookLogin>
-        </form>
+        <ButtonFaceBookLogin>
+          Login by FaceBook
+        </ButtonFaceBookLogin>
         <div>
           <div>
             <Link to="/">Sign Up</Link>
@@ -92,4 +95,4 @@ const FormLogin = () => {
   )
 }
 
-export default FormLogin
+export default LoginForm

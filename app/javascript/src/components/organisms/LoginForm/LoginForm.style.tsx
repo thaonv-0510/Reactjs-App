@@ -24,12 +24,13 @@ export const Container = styled.div`
 
   h2 {
     color: ${colors.navy};
+    text-align: center;
   }
 `;
 
 export const ButtonLogin = styled.button`
   height: 50px;
-  background: rgb(15 153 103);
+  background: ${colors.green};
   border: none;
   border-radius: 10px;
   color: ${colors.white};
@@ -39,7 +40,7 @@ export const ButtonLogin = styled.button`
 
   :hover {
     cursor: pointer;
-    background: rgb(7 120 84);
+    background: ${colors.darkGreen};
     box-shadow: 0 1px 20px rgb(0 0 0 / 20%);
   }
 `
@@ -68,3 +69,23 @@ export const LabelInput = styled.label`
   font-weight: bold;
   margin: 30px 0 10px 0
 `;
+
+export const LoadingSpan = styled.span`
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: inline-block;
+  border-top: 3px solid #FFF;
+  border-right: 3px solid transparent;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+`

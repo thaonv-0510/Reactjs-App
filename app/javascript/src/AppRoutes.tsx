@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route, BrowserRouter, Routes } from 'react-router-dom';
 import HomePage from '@src/components/pages/homePage/HomePage'
-import FormLogin from '@src/components/organisms/FormLogin';
+import FormLogin from '@src/components/organisms/LoginForm';
 
 const Error = () => (
   <div>

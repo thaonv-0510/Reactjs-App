@@ -60,6 +60,9 @@ jobs:
           keys:
             - libra-rails-bundle3-{{ checksum "Gemfile.lock" }}
       - run:
+          name: Wait for DB
+          command: dockerize -wait tcp://localhost:3306 -timeout 1m
+      - run:
           name: set up db
           command: bundle exec rails db:create db:migrate --trace
       - run:

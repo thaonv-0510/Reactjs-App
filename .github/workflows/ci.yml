@@ -1,0 +1,40 @@
+name: Libra CI
+on: [push]
+jobs:
+  backend-rspec-test:
+    runs-on: ubuntu-latest
+    working-directory: ~/Libra
+    env:
+      BUNDLE_PATH: vendor/bundle
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{.ruby-version}}
+          bundle-cache: true
+      - name: Install dependencies
+        run: bundle install
+      - name: Wait for DB
+        run: dockerize -wait tcp://localhost:3306 -timeout 1m
+      - name: set up db
+        run: bundle exec rails db:drop db:create db:migrate --trace
+      - name: Run test
+        run: bundle exec rspec spec/**/*_spec.rb
+  frontend-unit-test:
+    runs-on: ubuntu-latest
+    working-directory: ~/Libra
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set up node
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.17.1"
+          cache: yarn
+          cache-dependency-path: package-lock.json
+      - name: Install dependencies
+        run: yarn install
+      - name: Run test
+        run: yarn ciTest

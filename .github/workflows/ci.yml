@@ -3,28 +3,31 @@ on: [push]
 jobs:
   backend-rspec-test:
     runs-on: ubuntu-latest
-    working-directory: ~/Libra
     env:
       BUNDLE_PATH: vendor/bundle
+      RAILS_ENV: test
+    services:
+      mysql:
+        image: mysql:5.7
+        env:
+          MYSQL_HOST: 127.0.0.1
+          MYSQL_ROOT_PASSWORD: "123456"
+        ports:
+          - "3306:3306"
     steps:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: ${{.ruby-version}}
-          bundle-cache: true
-      - name: Install dependencies
-        run: bundle install
-      - name: Wait for DB
-        run: dockerize -wait tcp://localhost:3306 -timeout 1m
-      - name: set up db
-        run: bundle exec rails db:drop db:create db:migrate --trace
+          bundler-cache: true
       - name: Run test
-        run: bundle exec rspec spec/**/*_spec.rb
+        run: |
+          cp config/application.example.yml config/application.yml
+          bundle exec rails db:drop db:create db:migrate --trace
+          bundle exec rspec spec/**/*_spec.rb
   frontend-unit-test:
     runs-on: ubuntu-latest
-    working-directory: ~/Libra
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -33,8 +36,12 @@ jobs:
         with:
           node-version: "16.17.1"
           cache: yarn
-          cache-dependency-path: package-lock.json
+      - name: Cache node modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: cache-node_modules-${{hashFiles('yarn.lock')}}
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --frozen-lockfile
       - name: Run test
         run: yarn ciTest
